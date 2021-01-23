@@ -1,14 +1,50 @@
-/* Layout */
+/* 1. Layout */
+
+/* CSS custom variables */
+:root {
+    --font-plain: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    --font-serif: Georgia, serif;
+
+    --ratio: 1.5;
+
+    --s-6: calc(var(--s-5) / var(--ratio));
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio));
+    --s-2: calc(var(--s-1) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+    --s6: calc(var(--s5) * var(--ratio));
+
+    --color-main: #121212;
+
+    --color-link: #ab6867;
+    --color-hover: #915857;
+
+    --line-height: var(--ratio);
+
+    --font-size-sm: calc(var(--s0) / 1.275);
+
+    font-size: calc(0.333vw + 1em);
+    line-height: var(--line-height);
+
+    font-family: var(--font-plain);
+}
 
 /* Core body values. */
 body {
     min-width: 320px;
     min-height: 100vh;
-    line-height: 1;
     word-wrap: break-word;
     overflow-x: hidden;
 }
-/* Add a background image to the canvas. */
+
+/* 2. Background image effect. */
 body::before {
     content: '';
     display: block;
@@ -60,7 +96,7 @@ body::after {
     -ms-transform: scale(1);
     transform: scale(1);
 }
-
+/* Grid layout: TODO... */
 #wrapper {
     -webkit-overflow-scrolling: touch;
     display: flex;
@@ -108,4 +144,10 @@ body::after {
     -webkit-transition: opacity 1.5s ease-in-out 0s;
     -ms-transition: opacity 1.5s ease-in-out 0s;
     transition: opacity 1.5s ease-in-out 0s;
+}
+
+/* 3. Profile image styles */
+.img-profile {
+    border-radius: 100%;
+    width: 8rem;
 }
