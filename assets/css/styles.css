@@ -2,9 +2,10 @@
 
 /* CSS custom variables */
 :root {
-    --font-plain: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    --font-plain: Helvetica, 'Trebuchet MS', Verdana, sans-serif;
     --font-serif: Georgia, serif;
 
+    /* Modular scale variables, from https://every-layout.dev/rudiments/modular-scale/. */
     --ratio: 1.5;
 
     --s-6: calc(var(--s-5) / var(--ratio));
@@ -21,10 +22,11 @@
     --s5: calc(var(--s4) * var(--ratio));
     --s6: calc(var(--s5) * var(--ratio));
 
-    --color-main: #121212;
+    --color-main: #2f2e3b;
+    --color-secondary: #aaaaaa;
 
-    --color-link: #ab6867;
-    --color-hover: #915857;
+    --color-link: #59afc2;
+    --color-hover: #13a5d4;
 
     --line-height: var(--ratio);
 
@@ -54,13 +56,7 @@ body::before {
     width: 100vw;
     height: 100vh;
     z-index: 0;
-    -moz-pointer-events: none;
-    -webkit-pointer-events: none;
-    -ms-pointer-events: none;
     pointer-events: none;
-    -moz-transform: scale(1);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
     background-attachment: scroll;
     background-image: linear-gradient(
@@ -69,7 +65,6 @@ body::before {
             rgba(255, 255, 255, 0.671)
         ),
         url('../images/bg.jpg');
-    /* https://614351ce96b373d5.demo.carrd.co/assets/images/bg.jpg?v42174476286951 */
     background-position: 0% 0%, bottom;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -87,30 +82,15 @@ body::after {
     z-index: 1;
     opacity: 1;
     visibility: hidden;
-    -moz-transition: opacity 1.5s ease-in-out 0s, visibility 1.5s 0s;
-    -webkit-transition: opacity 1.5s ease-in-out 0s, visibility 1.5s 0s;
-    -ms-transition: opacity 1.5s ease-in-out 0s, visibility 1.5s 0s;
     transition: opacity 1.5s ease-in-out 0s, visibility 1.5s 0s;
-    -moz-transform: scale(1);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
 }
 /* Grid layout: TODO... */
 #wrapper {
     -webkit-overflow-scrolling: touch;
     display: flex;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
     align-items: center;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
     justify-content: center;
     min-height: 100vh;
     position: relative;
@@ -119,35 +99,80 @@ body::after {
 }
 
 #main {
-    display: flex;
     position: relative;
     max-width: 100%;
     z-index: 1;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
+
+    /* display: flex;
+    flex-wrap: wrap;
+
     align-items: center;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
     justify-content: center;
-    -moz-flex-grow: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-grow: 0;
     flex-grow: 0;
-    -moz-flex-shrink: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-shrink: 0;
-    flex-shrink: 0;
+    flex-shrink: 0; */
+
     text-align: center;
-    -moz-transition: opacity 1.5s ease-in-out 0s;
-    -webkit-transition: opacity 1.5s ease-in-out 0s;
-    -ms-transition: opacity 1.5s ease-in-out 0s;
     transition: opacity 1.5s ease-in-out 0s;
+}
+
+#main > .inner {
+    padding: var(--s3) var(--s2);
+    max-width: 100%;
+    width: 62rem;
+    text-align: left;
+}
+
+/* ↓ targets the intermediary wrapper */
+#main > * {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(var(--s1) * -1);
+}
+
+#main > * > * {
+    /* ↓ applies to both elements */
+    margin: var(--s2);
+}
+
+#main .first {
+    flex-basis: 36ch;
+    flex-grow: 1;
+
+    text-align: right;
+}
+
+#main .last {
+    /* ↓ grow from nothing */
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: calc(50% - var(--s2));
+
+}
+
+#main .last:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    margin-left: calc(var(--s2) * -1);
+    border-left: dotted 1px var(--color-link);
+    height: 80%;
 }
 
 /* 3. Profile image styles */
 .img-profile {
     border-radius: 100%;
-    width: 8rem;
+    width: var(--s5);
+    display: inline-block;
+}
+
+/* 4. Links */
+a:link,
+a:visited {
+    text-decoration: none;
+    color: var(--color-link);
+}
+a:hover,
+a:active {
+    color: var(--color-hover);
 }
