@@ -137,7 +137,6 @@ body::after {
 #main .first {
     flex-basis: 36ch;
     flex-grow: 1;
-
     text-align: right;
 }
 
@@ -216,7 +215,7 @@ li {
 /* 7. Layout: Stack */
 /* From: https://every-layout.dev/layouts/stack/ */
 .stack {
-    --space: var(--s-1);
+    --space: var(--s0);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
