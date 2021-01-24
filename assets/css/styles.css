@@ -238,13 +238,14 @@ ul.social {
 }
 ul.social li {
     display: inline-block;
+    vertical-align: middle;
 }
 ul.social li a {
     border-radius: 100%;
 
-    width: var(--s1);
-    height: var(--s1);
-    margin-left: var(--s-3);
+    width: var(--s2);
+    height: var(--s2);
+    margin-left: var(--s-2);
     margin-right: 0;
 
     display: flex;
