@@ -1,0 +1,15 @@
+# Daniel Canet, the website
+# The humans responsible & technology colophon
+
+# TEAM
+    Daniel Canet        -- Digital Production -- @dcanetma
+
+# TECHNOLOGY COLOPHON 
+    HTML5, CSS3, 
+    Node.
+
+# CREDITS
+
+- Photo by: https://unsplash.com/@ornellabinni
+- CSS tricks from: https://every-layout.dev.
+

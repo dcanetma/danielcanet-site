@@ -1,12 +1,9 @@
 /* 1. Layout */
 
-/* CSS custom variables */
+/* Set the CSS custom variables. */
 :root {
-    --font-plain: Helvetica, 'Trebuchet MS', Verdana, sans-serif;
-    --font-serif: Georgia, serif;
-
     /* Modular scale variables, from https://every-layout.dev/rudiments/modular-scale/. */
-    --ratio: 1.5;
+    --ratio: 1.333;
 
     --s-6: calc(var(--s-5) / var(--ratio));
     --s-5: calc(var(--s-4) / var(--ratio));
@@ -22,15 +19,25 @@
     --s5: calc(var(--s4) * var(--ratio));
     --s6: calc(var(--s5) * var(--ratio));
 
-    --color-main: #2f2e3b;
-    --color-secondary: #aaaaaa;
+    /* Define theme colors. */
+    --color-primary: #4D8AB3;
+    --color-secondary: #88cfff;
 
-    --color-link: #59afc2;
-    --color-hover: #13a5d4;
+    --color-text: #223440;
+    --color-link: #6CA6CC;
+    --color-hover: #6FD8E8;
+
+    /* Define typography variables. */
+    --font-plain: Helvetica, 'Trebuchet MS', Verdana, sans-serif;
+    --font-serif: Georgia, serif;
 
     --line-height: var(--ratio);
 
-    --font-size-sm: calc(var(--s0) / 1.275);
+    /* --line--height-sm: calc(var(--ratio) / var(--ratio));  */
+
+    --line--height-sm: var(--s2);
+
+    --font-size-sm: var(--s-3);
 
     font-size: calc(0.333vw + 1em);
     line-height: var(--line-height);
@@ -103,20 +110,11 @@ body::after {
     max-width: 100%;
     z-index: 1;
 
-    /* display: flex;
-    flex-wrap: wrap;
-
-    align-items: center;
-    justify-content: center;
-    flex-grow: 0;
-    flex-shrink: 0; */
-
-    text-align: center;
     transition: opacity 1.5s ease-in-out 0s;
 }
 
 #main > .inner {
-    padding: var(--s3) var(--s2);
+    padding: 0 var(--s3) var(--s2);
     max-width: 100%;
     width: 62rem;
     text-align: left;
@@ -141,28 +139,28 @@ body::after {
     text-align: right;
 }
 
+#main .first:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    margin-right: calc(var(--s2) * -1);
+    border-right: dotted 1px var(--color-link);
+    height: 80%;
+    top: 5%;
+}
+
 #main .last {
     /* ↓ grow from nothing */
     flex-basis: 0;
     flex-grow: 999;
     min-width: calc(50% - var(--s2));
-
-}
-
-#main .last:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 0;
-    margin-left: calc(var(--s2) * -1);
-    border-left: dotted 1px var(--color-link);
-    height: 80%;
 }
 
 /* 3. Profile image styles */
 .img-profile {
     border-radius: 100%;
-    width: var(--s5);
+    width: 8rem;
     display: inline-block;
 }
 
@@ -176,3 +174,162 @@ a:hover,
 a:active {
     color: var(--color-hover);
 }
+
+/* 6. Typography */
+body {
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-feature-settings: 'kern' 1;
+    font-kerning: normal;
+    hyphens: none;
+    overflow-wrap: break-word;
+    font-weight: normal;
+    font-style: normal;
+    font-family: var(--font-serif);
+    line-height: var(--line--height-sm);
+    color: var(--color-primary);
+}
+
+h1 {
+    font-size: var(--s2);
+}
+h2 {
+    font-size: var(--s1);
+}
+h3 {
+    font-size: var(--s0);
+}
+p,
+li {
+    font-size: var(--s-1);
+}
+
+/* 7. Layout: Stack */
+/* From: https://every-layout.dev/layouts/stack/ */
+.stack {
+    --space: var(--s-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.stack > * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.stack > * + * {
+    margin-top: var(--space);
+}
+
+/* 8. Social links */
+ul.social {
+    padding: 0;
+    width: 100%;
+}
+ul.social li {
+    display: inline-block;
+}
+ul.social li a {
+    border-radius: 100%;
+
+    width: var(--s1);
+    height: var(--s1);
+    margin-left: var(--s-3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.social li a img {
+}
+ul.social li a span.label {
+    display: none;
+}
+
+/* 9. Media Queries.  */
+@media (max-width: 67rem) {
+    #main .first {
+        text-align: left;
+    }
+
+    .stack {
+        align-items: flex-start;
+    }
+    #main .first:before {
+        border-right: none;
+    }
+
+    #main .last::before {
+        content: '';
+        display: block;
+        position: absolute;
+
+        margin-left: var(--s3);
+        top: auto;
+        height: 0;
+        border-top: dotted 1px var(--color-link);
+        margin-top: calc(var(--s2) * -1);
+        left: 0;
+        width: calc(100% - var(--s5) - var(--s5));
+    }
+}
+
+/* 10. Animations.  */
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+  }@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
