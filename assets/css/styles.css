@@ -243,8 +243,8 @@ ul.social li {
 ul.social li a {
     border-radius: 100%;
 
-    width: var(--s2);
-    height: var(--s2);
+    width: var(--s1);
+    height: var(--s1);
     margin-left: var(--s-2);
     margin-right: 0;
 
