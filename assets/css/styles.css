@@ -71,7 +71,7 @@ body::before {
             rgba(255, 255, 255, 0.671),
             rgba(255, 255, 255, 0.671)
         ),
-        url('../images/bg.jpg');
+        url('https://614351ce96b373d5.demo.carrd.co/assets/images/bg.jpg?v42174476286951');
     background-position: 0% 0%, bottom;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -92,7 +92,7 @@ body::after {
     transition: opacity 1.5s ease-in-out 0s, visibility 1.5s 0s;
     transform: scale(1);
 }
-/* Grid layout: TODO... */
+/* Grid layout. */
 #wrapper {
     -webkit-overflow-scrolling: touch;
     display: flex;
@@ -109,8 +109,10 @@ body::after {
     position: relative;
     max-width: 100%;
     z-index: 1;
-
     transition: opacity 1.5s ease-in-out 0s;
+
+    margin: var(--s2) 0;
+
 }
 
 #main > .inner {
@@ -214,7 +216,7 @@ li {
 /* 7. Layout: Stack */
 /* From: https://every-layout.dev/layouts/stack/ */
 .stack {
-    --space: var(--s-2);
+    --space: var(--s-1);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -256,17 +258,15 @@ ul.social li a span.label {
 
 /* 9. Media Queries.  */
 @media (max-width: 67rem) {
+    #main {
+        margin: var(--s4) 0;
+    }
     #main .first {
         text-align: left;
-    }
-
-    .stack {
-        align-items: flex-start;
     }
     #main .first:before {
         border-right: none;
     }
-
     #main .last::before {
         content: '';
         display: block;
@@ -276,10 +276,14 @@ ul.social li a span.label {
         top: auto;
         height: 0;
         border-top: dotted 1px var(--color-link);
-        margin-top: calc(var(--s1) * -1);
+        margin-top: calc(var(--s1) * -1.3); /* ^_^ */
         left: 0;
         width: calc(100% - var(--s5) - var(--s5));
     }
+    .stack {
+        align-items: flex-start;
+    }
+
     ul.social li a {
         margin-right: var(--s-3);
         margin-left: 0;
