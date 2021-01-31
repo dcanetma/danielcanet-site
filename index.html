@@ -13,8 +13,10 @@
     </title>
     <meta name="description" content="[TODO DESCRIPTION]" />
 
-    <meta property="og:site_name" content="[TODO TITLE]" />
-    <meta property="og:title" content="[TODO TITLE]" />
+    <meta property="og:site_name" content="Daniel Canet | Software Engineering Manager & Full Stack Web
+    Developer" />
+    <meta property="og:title" content="Daniel Canet | Software Engineering Manager & Full Stack Web
+    Developer" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="[TODO DESCRIPTION]" />
 
@@ -30,73 +32,94 @@
     <!-- CSS Reset by Andy Bell. -->
     <link rel="stylesheet" href="assets/css/reset.min.css" />
     <!-- Custom styles. -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
-<body>
-    <!-- Page content -->
+<body class="-dark-mode">
     <div id="wrapper" class="fade-in">
+        <a href="#" id="toogle" class="toggle-mode" title="Toogle between dark and light mode">Toggle mode</a>
         <div id="main" role="main">
             <div class="inner">
                 <div class="first stack">
                     <img src="assets/images/profile.jpg" alt="Profile pic from Daniel Canet" class="img-profile" />
                     <h1>Daniel Canet</h1>
                     <ul class="social" role="list">
-                        <li class="twitter">
-                            <a href="https://twitter.com/dcanetma" title="Visit my Twitter profile">
-                                <img src="assets/icons/twitter.svg" alt="LinkedIn icon" />
-                                <span class="label">LinkedIn</span>
+                        <li>
+                            <a href="https://linkedin.com" title="Visit Daniel Canet's LinkedIn profile">
+                                LinkedIn
                             </a>
                         </li>
-                        <li class="github">
-                            <a href="https://github.com/dcanetma" title="Visit my GitHub profile">
-                                <img src="assets/icons/github.svg" alt="GitHub icon" />
-                                <span class="label">GitHub</span>
+                        <li>
+                            <a href="https://github.com/dcanetma" title="Visit Daniel Canet's GitHub profile">
+                                GitHub
                             </a>
                         </li>
-                        <li class="linkedin">
-                            <a href="https://linkedin.com" title="Visit my LinkedIn profile">
-                                <img src="assets/icons/linkedin.svg" alt="LinkedIn icon" />
-                                <span class="label">LinkedIn</span>
+                        <li>
+                            <a href="https://twitter.com/dcanetma" title="Visit Daniel Canet's Twitter profile">
+                                BitBucket
                             </a>
                         </li>
+                        <li>
+                            <a href="https://twitter.com/dcanetma" title="Visit Daniel Canet's Twitter profile">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/dcanetma" title="Visit Daniel Canet's Twitter profile">
+                                I♡BCN
+                            </a>
+                        </li>
+
                     </ul>
                     <p>
-                        <a href="mailto:hola@danielca.net" title="Contact by e-mail">hola@danielca.net</a>
+                        <a href="mailto:hola@danielca.net" title="Contact by e-mail" class="btn">hola@danielca.net</a>
                     </p>
                 </div>
                 <div class="last stack">
                     <h2>
-                        Software Engineering Manager & Full Stack Web
-                        Developer
+                        Full Stack Web Developer.
                     </h2>
                     <p>
-                        Donec iaculis lorem metus, at euismod lorem et
-                        lobortis. Maecenas tincidunt posuere quam, eget
-                        tempus rutrum non. Donec iaculis lorem metus, at
-                        euismod lorem et lobortis. Maecenas tincidunt
-                        posuere quam, eget tempus rutrum non. Ut tincidunt
-                        amet ipsum.
+                        <b>Daniel Canet</b> is a software engineer manager born and based in Barcelona. He is a graduate
+                        in
+                        Informatics Engineering of the
+                        <a href="https://www.fib.upc.edu/en/fib">Facultat d'Informàtica de Barcelona (FIB)</a>, one of
+                        the top 10 computer science schools in Europe.
                     </p>
                     <p>
-                        Sed magna aculis lorem metus, at euismod lorem et
-                        magna lobortis. Maecenas tincidunt posuere quam,
-                        eget tempus rutrum non. Etiam tincidunt amet ipsum.
-                        Donec iaculis lorem metus, at euismod lorem et
-                        lobortis. Maecenas tincidunt posuere quam, eget
-                        tempus rutrum lorem metus rutrum non. Ut tincidunt
-                        amet ipsum feugiat sed tempus.
+                        He has produced xx experience on the web using cutting-edge technology for cliens like name
+                        dropping y tal, for the last no se cuantos years. Que si en el sector cultural y de la
+                        educación, esto. Que si experiencia a tope en muchas cosas.
                     </p>
                     <p>
-                        Maecenas tincidunt posuere quam, eget tempus rutrum
-                        non. Donec magna metus rutrum non. Ut tincidunt amet
-                        ipsum feugiat sed tempus. Lorem ipsum dolor sit amet
-                        nullam feugiat tempus.
+                        He currently works at WIRIS, the creators of
+                        MathType, where his goal is to bring the
+                        functionality of a collection of mathematical and
+                        learning tools to a wide range of contexts,
+                        technologies and web developer's communities: from
+                        Open source LMS like Moodle to Google Apps,
+                        Microsoft Office 365 or native components for
+                        Javascript modern frameworks like React, Angular or
+                        VueJS.
+                    </p>
+                    <p>
+                        He also does strange and experimental bots, mostly
+                        with Javascript.
                     </p>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        const body = document.querySelector('body');
+        const toggle = document.getElementById('toggle');
+        toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+
 </body>
 
 </html>
