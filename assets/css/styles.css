@@ -22,9 +22,15 @@
 
   /* Define theme colors. */
   --color-headline: #000000;
-  --color-text: #323232;
+  --color-text: #5a5a5a;
   --color-link: #111111;
   --color-hover: #7d7d7d;
+
+  --color-dark-bg: #111111;
+  --color-dark-headline: #ffffff;
+  --color-dark-text: #aaaaaa;
+  --color-dark-link: #cecece;
+  --color-dark-hover: #ababab;
 
   /* Define typography variables. */
   --font-plain: "Inter", Helvetica, "Trebuchet MS", Verdana, sans-serif;
@@ -34,9 +40,11 @@
 
   /* --line--height-sm: calc(var(--ratio) / var(--ratio));  */
 
-  --line--height-sm: 1
+  --line--height-sm: 1;
 
   --font-size-sm: var(--s-3);
+
+  --theme-switch-duration: 1.5s;
 
   font-size: 1em;
   line-height: var(--line-height);
@@ -69,7 +77,7 @@ body {
   position: relative;
   max-width: 100%;
 
-  margin: var(--s2) 0;
+  margin: var(--s5) 0;
 
   transition: opacity 3s ease-in-out 0s;
 }
@@ -131,8 +139,9 @@ a {
   transition: color .3s ease-in-out 0s;
 }
 a.btn {
-  font-weight: 700;
-  letter-spacing: -0.05em;
+  font-weight: 600;
+  /* letter-spacing: -0.04em; 
+  font-size: var(--s0); */
 }
 a:link,
 a:visited {
@@ -167,16 +176,19 @@ h6 {
 }
 
 h1 {
-  font-size: var(--s3);
+  font-size: var(--s5);
   line-height: 1;
+  line-height: 0.82;
   font-weight: 800;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
 }
 h2 {
   font-size: var(--s4);
   line-height: 1;
+  line-height: 0.82;
   font-weight: 800;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
+  padding-bottom: var(--s-2);
 }
 h3 {
   font-size: var(--s3);
@@ -192,13 +204,14 @@ a.toggle-mode {
   position: fixed;
   top: var(--s1);
   right: var(--s1);
-  display: block;
+  display: inline-block;
   width: var(--s0);
   height: var(--s0);
   border-radius: 99%;
   text-indent: -9999px;
   background-color: var(--color-link);
   z-index: 9;
+  overflow: hidden;
 }
 
 /* 7. Layout: Stack */
@@ -275,16 +288,32 @@ ul.social li a:after {
 }
 
 /* 9. Theme */
+body {
+  transition: background-color  var(--theme-switch-duration) ease-in-out 0s, color  var(--theme-switch-duration) ease-in-out 0s;
+}
+h1, h2, h3, h4, h5, h6,
+a:link, a:visited, a:hover, a:active {
+  transition: color var(--theme-switch-duration) ease-in-out 0s;
+}
+#main .first:before,
+#main .last:before,
+#main .last:after {
+  transition: border-color var(--theme-switch-duration) ease-in-out 0s;
+}
+a.toggle-mode {
+  transition: background-color var(--theme-switch-duration) ease-in-out 0s;  
+}
+
 body.dark-mode a.toggle-mode {
-  background-color: #ffffff;
+  background-color: var(--color-dark-headline);
 }
 body.dark-mode {
-  background-color: #000000;
-  color: #aaaaaa;
+  background-color: var(--color-dark-bg);
+  color: var(--color-dark-text);
 
 }
 body.dark-mode #main .first:before {
-  border-right-color: #ffffff;
+  border-right-color: var(--color-dark-headline);
 }
 
 body.dark-mode h1,
@@ -293,17 +322,25 @@ body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
 body.dark-mode h6 {
-  color: #ffffff;
+  color: var(--color-dark-headline);
 }
 
 body.dark-mode a:link,
 body.dark-mode a:visited {
-  color: #aaaaaa;
+  color: var(--color-dark-link);
 }
 
 body.dark-mode a:hover,
 body.dark-mode a:active {
-  color: var(--color-hover);
+  color: var(--color-dark-hover);
+}
+
+body.dark-mode #main .last::before {
+  border-top-color: var(--color-dark-headline);
+}
+
+body.dark-mode #main .last::after {
+  border-bottom-color: var(--color-dark-headline);
 }
 
 /* 10. Animations.  */
