@@ -22,5 +22,5 @@ if [[ $TRAVIS_BRANCH == 'deploy' ]] ; then
  
 else
 	echo 'This branch will not be deployed, though. The site is deployed from "deploy" branch, only.'
-	exit 1
+	exit 0
 fi
