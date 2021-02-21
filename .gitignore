@@ -1,5 +1,12 @@
-# custom
+# Custom
 sandbox
+source/contact-credentials.php
+_config.deploy.yml
+_multiconfig.yml
+package-lock.json
+
+# asset pipeline
+/node_modules
 
 # Environrment variables
 .env
@@ -7,7 +14,9 @@ sandbox
 # Static site generation
 db.json
 *.log
-node_modules/
+public/
+.deploy*/
+.deploy_git
 
 
 # Numerous always-ignore extensions
