@@ -10,6 +10,5 @@
 
 # CREDITS
 
-- Photo by: https://unsplash.com/@ornellabinni
 - CSS tricks from: https://every-layout.dev.
 

@@ -1,0 +1,110 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Daniel Canet
+description: Full Stack Web Developer.
+keywords:
+author: Daniel Canet
+language: en
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://www.danielca.net
+root: /
+permalink: :post_title/
+# permalink_defaults:
+
+
+# "LESS IMPORTANT" settings
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: 
+  - "**/*.txt"
+  - "**/*.php"
+  - ".htaccess"
+  - "phpmailer/"
+  - "static/"
+
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 0
+pagination_dir: page
+  
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Extensions
+theme: danielcanet
+
+include:
+  - "humans.txt"
+  - "robots.txt"
+  - ".htaccess"
+  - "media/**/*"
+  - "phpmailer"
+  - "android-chrome-192x192.png"
+  - "android-chrome-512x512.png"
+  - "apple-touch-icon.png"
+  - "browserconfig.xml"
+  - "favicon-16x16.png"
+  - "favicon-32x32.png"
+  - "favicon.ico"
+  - "mstile-150x150.png"
+  - "safari-pinned-tab.svg"
+  - "site.webmanifest"
+
+exclude:
+  - "static"
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+# index_generator:
+#   path: '/'
+#   per_page: 0
+#   order_by: -date
+
+# Asset pipeline
+# @see: https://github.com/hexojs/hexo-asset-pipeline
+asset_pipeline:
+  revisioning:
+    enable: false 
+  clean_css:
+    enable: true
+    exclude: 
+      - '*.min.css'    
+  uglify_js:
+    enable: false
+  imagemin:
+    enable: false
+  html_minifier:
+    enable: true  
+    ignore_error: false
+    removeComments: true    
+    minifyJS: false         
+    minifyCSS: false        
