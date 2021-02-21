@@ -5,13 +5,15 @@
   "scripts": {
     "prestart": "hexo clean",
     "start": "hexo server",
-    "develop": "hexo generate --draft --watch & browser-sync start  --proxy='martinaamund.dev'  --files='public' --serveStatic='public'",
+    "develop": "hexo generate --draft --watch & browser-sync start  --proxy='danielca.dev'  --files='public' --serveStatic='public'",
     "pregenerate": "hexo clean",
     "generate": "hexo generate --config _config.yml,_config.deploy.yml",
     "deploy": "hexo deploy --config _config.yml,_config.deploy.yml",
     "predeploy": "hexo clean",
     "postdeploy": "rm _multiconfig.yml",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "server": "hexo server"
   },
   "repository": {
     "type": "git",
@@ -20,10 +22,10 @@
   "author": "Daniel Canet",
   "license": "MIT",
   "hexo": {
-    "version": "^5.4.0"
+    "version": "5.4.0"
   },
   "dependencies": {
-    "hexo": "^5.4.0",
+    "hexo": "^5.0.0",
     "hexo-asset-pipeline": ">=1.8.0",
     "hexo-auto-canonical": ">=0.1.1",
     "hexo-autoprefixer": ">=2.0.0",
@@ -33,6 +35,6 @@
     "hexo-renderer-ejs": ">=0.3.1",
     "hexo-renderer-marked": ">=2.0.0",
     "hexo-renderer-sass": ">=0.4.0",
-    "hexo-server": ">=0.3.3"
+    "hexo-server": "^2.0.0"
   }
 }
