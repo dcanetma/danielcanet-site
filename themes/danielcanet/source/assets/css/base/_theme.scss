@@ -1,23 +1,349 @@
+/* Core body values. */
 body {
-	color: var(--color-main);
+  min-height: 100vh;
+  word-wrap: break-word;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 { 
-	color: var(--color-main);
+/* 2. Background image effect. */
+#wrapper {
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
 
+#main {
+  position: relative;
+  max-width: 100%;
+  margin: var(--s5) 0;
+  transition: opacity 3s ease-in-out 0s;
+}
+
+#main > .inner {
+  padding: 0 var(--s3) var(--s2);
+  max-width: 100%;
+  width: 78rem;
+}
+
+/* ↓ targets the intermediary wrapper */
+#main > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--s1) * -1);
+}
+
+#main > * > * {
+  /* ↓ applies to both elements */
+  margin: var(--s1);
+}
+
+#main .first {
+  flex-basis: 36ch;
+  flex-grow: 1;
+  text-align: right;
+}
+
+#main .first:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  margin-right: calc(var(--s1) * -1);
+  border-right: solid 0.2em var(--color-link);
+  height: calc(100% - var(--s2));
+  top: 0;
+  border-radius: var(--s1);
+}
+
+#main .last {
+  /* ↓ grow from nothing */
+  flex-basis: 0;
+  flex-grow: 999;
+  align-items: flex-start;
+  min-width: calc(50% - var(--s2));
+}
+
+/* 3. Profile image styles */
+.img-profile {
+  border-radius: 100%;
+  width: 8rem;
+  display: inline-block;
+}
+
+/* 4. Links */
 a {
-	color: var(--color-main);	
-	&:link, &:visited {
-		color: var(--color-main);	
-	}
-	&:hover, &:active {
-		color: var(--color-main);	
-	}
+  transition: color 0.3s ease-in-out 0s;
+}
+a.btn {
+  font-weight: 600;
+  /* letter-spacing: -0.04em; 
+	  font-size: var(--s0); */
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--color-link);
+}
+a:hover,
+a:active {
+  color: var(--color-hover);
 }
 
-.navbar-brand,
-.navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-	color: var(--color-main);	
+/* 6. Typography */
+body {
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  hyphens: none;
+  overflow-wrap: break-word;
+  font-weight: normal;
+  font-style: normal;
+  font-family: var(--font-plain);
+  line-height: var(--line--height-sm);
+  color: var(--color-headline);
+}
+
+h1 {
+  font-size: var(--s4);
+  line-height: 1;
+  line-height: 0.82;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+h2 {
+  font-size: var(--s3);
+  line-height: 1;
+  line-height: 0.82;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  padding-bottom: var(--s-2);
+}
+h3 {
+  font-size: var(--s3);
+}
+p,
+li {
+  font-size: var(--s0);
+  font-weight: 200;
+}
+.stack a {
+  font-weight: 300;
+}
+/* 7. Toggle mode */
+a.toggle-mode {
+  position: fixed;
+  top: var(--s1);
+  right: var(--s1);
+  display: inline-block;
+  width: var(--s0);
+  height: var(--s0);
+  border-radius: 99%;
+  text-indent: -9999px;
+  background-color: var(--color-link);
+  z-index: 9;
+  overflow: hidden;
+}
+
+/* 7. Layout: Stack */
+/* From: https://every-layout.dev/layouts/stack/ */
+.stack {
+  --space: var(--s0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+  width: 100%;
+}
+
+/* 8. Social links */
+ul.social {
+  padding: 0;
+  width: 100%;
+}
+ul.social li a:after {
+  content: "\002015";
+  padding-left: var(--s-4);
+}
+
+/* 9. Media Queries.  */
+@media (max-width: 60rem) {
+  #main {
+    margin: var(--s4) 0;
+  }
+  #main .first {
+    text-align: left;
+  }
+  #main .first:before {
+    border-right: none;
+  }
+  #main .last::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    margin-left: var(--s3);
+    top: auto;
+    height: 0;
+    border-top: solid 0.4em var(--color-link);
+    margin-top: calc(var(--s1) * -1.3); /* ^_^ */
+    left: 0;
+    width: calc(100% - var(--s5) - var(--s5));
+    border-radius: var(--s1);
+  }
+  #main .last::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    margin-left: var(--s3);
+    bottom: 0;
+    height: 0;
+    border-bottom: solid 0.1em var(--color-link);
+    margin-top: calc(var(--s1) * -1.3); /* ^_^ */
+    left: 0;
+    width: calc(100% - var(--s5) - var(--s5));
+  }
+  .stack {
+    align-items: flex-start;
+  }
+}
+
+/* 9. Theme */
+body {
+  transition: background-color var(--theme-switch-duration) ease-in-out 0s,
+    color var(--theme-switch-duration) ease-in-out 0s;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  transition: color var(--theme-switch-duration) ease-in-out 0s;
+}
+#main .first:before,
+#main .last:before,
+#main .last:after {
+  transition: border-color var(--theme-switch-duration) ease-in-out 0s;
+}
+a.toggle-mode {
+  transition: background-color var(--theme-switch-duration) ease-in-out 0s;
+}
+
+body.dark-mode a.toggle-mode {
+  background-color: var(--color-dark-headline);
+}
+body.dark-mode {
+  background-color: var(--color-dark-bg);
+  color: var(--color-dark-text);
+}
+body.dark-mode #main .first:before {
+  border-right-color: var(--color-dark-headline);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: var(--color-dark-headline);
+}
+
+body.dark-mode a:link,
+body.dark-mode a:visited {
+  color: var(--color-dark-link);
+}
+
+body.dark-mode a:hover,
+body.dark-mode a:active {
+  color: var(--color-dark-hover);
+}
+
+body.dark-mode #main .last::before {
+  border-top-color: var(--color-dark-headline);
+}
+
+body.dark-mode #main .last::after {
+  border-bottom-color: var(--color-dark-headline);
+}
+
+/* 10. Animations.  */
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

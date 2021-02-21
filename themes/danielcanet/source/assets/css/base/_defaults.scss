@@ -2,35 +2,17 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-} 
-
-body, form {
-  margin: 0;
-  padding: 0;
 }
 
-[hidden] {
-    display: none
-}
-
-[hidden]+* {
-    margin-top: 0!important
-}
-
-@media (prefers-reduced-motion:no-preference) {
-  :root {
-    scroll-behavior: smooth
-  }
-}
-
-*,
-:after,
-:before {
-    box-sizing: border-box;
-    font-family: inherit;
-    color: inherit;
-    overflow-wrap: break-word;
-    margin: 0;
-    padding: 0;
-    border: 0 solid var(--color-dark)
+.sr-only,
+.sr-only-focusable:not(:focus) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }

@@ -1,23 +1,22 @@
-<%# if (page.layout == 'php') {%>
-<%# unescape(page.content) %>
-<%# } else { %>
-	<!doctype html>
-	<html lang="en">
-	  <head>
-			<%- partial('_partial/head') %>
-	  </head>
-	  <body class="<%- page.layout ? 'body-' + page.layout : 'body-home' %>">
-			<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
-			<!-- Header  -->
-			<%- partial('_partial/header') %>
-			<!-- Main content -->
-			<main id="content">
-			  <%- body %>          
-			</main>
-			<!-- Footer & Closure -->
-			<%- partial('_partial/footer') %>
-			<%- partial('_partial/closure') %>
-	  </body>
-	</html>
+<%# if (page.layout == 'php') {%> <%# unescape(page.content) %> <%# } else { %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- partial('_partial/head') %>
+  </head>
+  <body class="<%- page.layout ? 'body-' + page.layout : 'body-home' %>">
+    <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
+    <div id="wrapper" class="fade-in">
+      <!-- Header  -->
+      <%- partial('_partial/header') %>
+      <!-- Main content -->      
+      <div id="main" role="main">
+        <div class="inner"><%- body %></div>
+      </div>
+      <!-- Footer & Closure -->
+      <%# partial('_partial/footer') %> 
+      <%- partial('_partial/closure') %>
+    </div>
+  </body>
+</html>
 <%# } %>
-

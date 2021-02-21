@@ -1,4 +1,5 @@
-$(function() {
-	var $body = $('body');	
-
+$(function () {
+  $("a.toggle-mode").on("click", function (event) {
+    $("body").toggleClass("dark-mode");
+  });
 });

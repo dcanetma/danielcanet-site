@@ -1,7 +1,7 @@
 <!-- <%= page.layout %> layout -->
 <% if (page.title){ %>
 <!-- Hide the title but make it accessible -->
-<h1 class="d-none"><a href="<%= page.permalink %>"><%= page.title %></a></h1>
+<h1 hidden><a href="<%= page.permalink %>"><%= page.title %></a></h1>
 <% } %>
 <!-- Print the page's content -->
 <%- page.content %>
