@@ -91,9 +91,14 @@ a:link,
 a:visited {
   text-decoration: none;
   color: var(--color-link);
+  color: var(--color-text);
+  font-weight: bold;
+  font-weight: 400;
 }
 a:hover,
 a:active {
+  font-weight: bold;
+  font-weight: 400;
   color: var(--color-hover);
 }
 
@@ -141,9 +146,6 @@ p,
 li {
   font-size: var(--s0);
   font-weight: 200;
-}
-.stack a {
-  font-weight: 300;
 }
 /* 7. Toggle mode */
 a.toggle-mode {

@@ -23,7 +23,7 @@ description: Daniel Canet is a Software Engineering Manager based in Barcelona.
         <a href="mailto:hello@danielca.net" title="Contact by e-mail" class="btn">hello@danielca.net</a>
     </p>
 </div>
-<div class="last stack">
+<div class="last stack bio">
     <h2>
         Full Stack Web Developer.
     </h2>
