@@ -261,42 +261,45 @@ a.toggle-mode {
   transition: background-color var(--theme-switch-duration) ease-in-out 0s;
 }
 
-body.dark-mode a.toggle-mode {
+body.dark-theme a.toggle-mode {
   background-color: var(--color-dark-headline);
 }
-body.dark-mode {
+body.dark-theme {
   background-color: var(--color-dark-bg);
   color: var(--color-dark-text);
 }
-body.dark-mode #main .first:before {
+body.dark-theme #main .first:before {
   border-right-color: var(--color-dark-headline);
 }
 
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode h6 {
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
   color: var(--color-dark-headline);
 }
 
-body.dark-mode a:link,
-body.dark-mode a:visited {
+body.dark-theme a:link,
+body.dark-theme a:visited {
   color: var(--color-dark-link);
 }
 
-body.dark-mode a:hover,
-body.dark-mode a:active {
+body.dark-theme a:hover,
+body.dark-theme a:active {
   color: var(--color-dark-hover);
 }
 
-body.dark-mode #main .last::before {
+body.dark-theme #main .last::before {
   border-top-color: var(--color-dark-headline);
 }
 
-body.dark-mode #main .last::after {
+body.dark-theme #main .last::after {
   border-bottom-color: var(--color-dark-headline);
+}
+
+@media (prefers-color-scheme: dark) {
 }
 
 /* 10. Animations.  */
