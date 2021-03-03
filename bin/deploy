@@ -13,7 +13,7 @@ if [[ $TRAVIS_BRANCH == 'deploy' ]] ; then
 
 	# Create credential deploy file
 	touch _config.deploy.yml
-	YML_FMT='\n\ndeploy:\n  type: ftpsync\n  host: %s\n  user: %s\n  pass: %s\n  remote: %s\n  port: 22\n'
+	YML_FMT='\n\ndeploy:\n  type: ftpsync\n  host: %s\n  user: %s\n  pass: %s\n  remote: %s\n  port: 21\n'
 	printf "$YML_FMT" "$FTP_HOST" "$FTP_USERNAME" "$FTP_PASSWORD" "$FTP_PATH" >> _config.deploy.yml
 	# echo "$(cat  _config.deploy.yml)"
 
