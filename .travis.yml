@@ -4,20 +4,20 @@ node_js:
 
 branches:
   only:
-  - deploy
+    - deploy
 
 cache:
   directories:
-  - node_modules 
+    - node_modules
 
 before_install:
-- npm install -g hexo-cli
+  - npm install -g hexo-cli
 
 install:
-- npm install
+  - npm install
 
 script:
-- "./bin/deploy"
+  - "./bin/deploy"
 
 after_script:
   - echo deployment completed!
