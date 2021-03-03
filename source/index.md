@@ -56,6 +56,6 @@ description: Daniel Canet is a Software Engineering Manager based in Barcelona.
         Códax</b>, <b>CREAF</b> and more.
     </p>
     <p>
-        He also does experimental things and bots with Javascript.
+        He also works on experimental projects as <a href="https://www.google.com/search?safe=off&q=spaingovedits">Twitter bots</a> and other stuff. Like the <a href="https://www.guiri.ooo/" title="We Are Not Artists">Guiri Institute</a>, a research group on design, technology and motion-graphics.
     </p>
 </div>
