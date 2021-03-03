@@ -50,8 +50,8 @@ description: Daniel Canet is a Software Engineering Manager based in Barcelona.
         more local, personal and art based projects. 
     </p>
     <p>
-        Currently <a href="https://www.wiris.com/"
-            title="Current position">Engineering Team Lead of Web Integrations at WIRIS</a> in Barcelona. Previous collaborations include <b>CASIO</b>, <b>BMW</b>,
+        He is currently leading the <a href="https://www.wiris.com/"
+            title="Current position">Integrations web team at Wiris</a>. Previous collaborations include <b>CASIO</b>, <b>BMW</b>,
         <b>Carrefour</b>, <b>Armand Basi/Lacoste</b>, <b>Hangar.org</b>, <b>Volkswagen</b>, <b>Amnesty International</b>, <b>Bodegas Martín
         Códax</b>, <b>CREAF</b> and more.
     </p>

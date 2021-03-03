@@ -147,6 +147,9 @@ li {
   font-size: var(--s0);
   font-weight: 200;
 }
+p b {
+  color: var(--color-text);
+}
 /* 7. Toggle mode */
 a.toggle-mode {
   position: fixed;
@@ -299,8 +302,10 @@ body.dark-theme #main .last::after {
   border-bottom-color: var(--color-dark-headline);
 }
 
-@media (prefers-color-scheme: dark) {
+body.dark-theme p b {
+  color: var(--color-dark-link);
 }
+
 
 /* 10. Animations.  */
 .fade-in {
