@@ -9,13 +9,18 @@ description: Daniel Canet is a Software Engineering Manager based in Barcelona.
     <h1>Daniel Canet</h1>
     <ul class="social" role="list">
         <li>
-            <a href="https://linkedin.com" title="Visit Daniel Canet's LinkedIn profile">
-                LinkedIn
+            <a href="https://github.com/dcanetma" title="Visit Daniel Canet's GitHub profile">
+                GitHub
             </a>
         </li>
         <li>
-            <a href="https://github.com/dcanetma" title="Visit Daniel Canet's GitHub profile">
-                GitHub
+            <a href="https://twitter.com/dcanetma" title="Visit Daniel Canet's Twitter profile">
+                Twitter
+            </a>
+        </li>
+        <li>
+            <a href="https://linkedin.com" title="Visit Daniel Canet's LinkedIn profile">
+                LinkedIn
             </a>
         </li>
     </ul>
