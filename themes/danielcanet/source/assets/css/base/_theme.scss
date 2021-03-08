@@ -148,7 +148,9 @@ li {
   font-weight: 200;
 }
 p b {
-  color: var(--color-text);
+  font-weight: bold;
+  font-weight: 400;
+  color: var(--color-link);
 }
 /* 7. Toggle mode */
 a.toggle-mode {
@@ -252,7 +254,9 @@ h6,
 a:link,
 a:visited,
 a:hover,
-a:active {
+a:active,
+p b,
+p a {
   transition: color var(--theme-switch-duration) ease-in-out 0s;
 }
 #main .first:before,
@@ -284,6 +288,10 @@ body.dark-theme h6 {
   color: var(--color-dark-headline);
 }
 
+body.dark-theme p b {
+  color: var(--color-dark-link);
+}
+
 body.dark-theme a:link,
 body.dark-theme a:visited {
   color: var(--color-dark-link);
@@ -305,7 +313,6 @@ body.dark-theme #main .last::after {
 body.dark-theme p b {
   color: var(--color-dark-link);
 }
-
 
 /* 10. Animations.  */
 .fade-in {
