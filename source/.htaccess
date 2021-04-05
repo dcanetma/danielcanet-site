@@ -946,54 +946,8 @@ FileETag None
     RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [QSA,L]
 </IfModule>
 
-# Redirect to https
-# RewriteEngine On
-# RewriteCond %{HTTPS} !=on
-# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-
-# CUSTOM STUFF
-
-# Redirects from old website
-# @todo: 
-
-<IfModule mod_rewrite.c>
-
-    RewriteEngine On
-    Options +FollowSymlinks
-
-    Redirect 301    /showreel/amild-wow/                    /amild/
-    Redirect 301    /showreel/san-pelligrino/               /san-pelligrino/
-    Redirect 301    /showreel/penny-naturgut/               /penny/
-    Redirect 301    /showreel/samsung-dreams/               /samsung/
-    Redirect 301    /showreel/ibm-morning/                  /ibm/
-    Redirect 301    /showreel/nikon-d3400/                  /nikon/
-    Redirect 301    /showreel/hearts-on-fire/               /hearts-on-fire/
-    Redirect 301    /showreel/turkish-airlines-five-senses/ /turkish-airlines/
-    Redirect 301    /showreel/t-mobile-are-you-with-us/     /t-mobile/
-    Redirect 301    /showreel/o2/                           /O2/
-    Redirect 301    /showreel/party-poker/                  /party-poker/
-    Redirect 301    /showreel/budweiser-fa-cup/             /budweiser/
-
-    Redirect 301    /showreel/amild-wow                    /amild/
-    Redirect 301    /showreel/san-pelligrino               /san-pelligrino/
-    Redirect 301    /showreel/penny-naturgut               /penny/
-    Redirect 301    /showreel/samsung-dreams               /samsung/
-    Redirect 301    /showreel/ibm-morning                 /ibm/
-    Redirect 301    /showreel/nikon-d3400                  /nikon/
-    Redirect 301    /showreel/hearts-on-fire               /hearts-on-fire/
-    Redirect 301    /showreel/turkish-airlines-five-senses /turkish-airlines/
-    Redirect 301    /showreel/t-mobile-are-you-with-us     /t-mobile/
-    Redirect 301    /showreel/o2                           /O2/
-    Redirect 301    /showreel/party-poker                  /party-poker/
-    Redirect 301    /showreel/budweiser-fa-cup             /budweiser/
-
-
-    RewriteRule     ^representation/(.*)$       /contact/ [R=301,NC,L]
-    Redirect 301    /representation             /contact/
-
-    RewriteRule     ^region/(.*)$               /contact/ [R=301,NC,L]
-    Redirect 301    /region                     /contact/
-
-</IfModule>
+# Redirect to http when https on
+RewriteEngine On
+RewriteCond %{HTTPS} !=off
+RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
