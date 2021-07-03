@@ -368,6 +368,15 @@ AddDefaultCharset utf-8
 #   RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 #</IfModule>
 
+# -----------------------------------------------------------------------------------------------
+# If you only want to allow HTTP
+# -----------------------------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} on
+  RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
 # ----------------------------------------------------------------------
 # | Suppressing / Forcing the `www.` at the beginning of URLs          |
 # ----------------------------------------------------------------------
@@ -390,12 +399,20 @@ AddDefaultCharset utf-8
 
 # Option 1: rewrite www.example.com → example.com
 
-#<IfModule mod_rewrite.c>
-#    RewriteEngine On
-#    RewriteCond %{HTTPS} !=on
-#    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-#    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
-#</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} on
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+</IfModule>
+
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -406,7 +423,7 @@ AddDefaultCharset utf-8
 
 #<IfModule mod_rewrite.c>
 #    RewriteEngine On
-#    RewriteCond %{HTTPS} !=on
+#    RewriteCond %{HTTP} !=on
 #    RewriteCond %{HTTP_HOST} !^www\. [NC]
 #    RewriteCond %{SERVER_ADDR} !=127.0.0.1
 #    RewriteCond %{SERVER_ADDR} !=::1
@@ -945,9 +962,4 @@ FileETag None
     RewriteCond %{REQUEST_FILENAME}.html -f
     RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [QSA,L]
 </IfModule>
-
-# Redirect to http when https on
-RewriteEngine On
-RewriteCond %{HTTPS} !=off
-RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
