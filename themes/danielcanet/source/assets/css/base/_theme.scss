@@ -126,15 +126,13 @@ h6 {
 
 h1 {
   font-size: var(--s4);
-  line-height: 1;
   line-height: 0.82;
   font-weight: 800;
   letter-spacing: -0.03em;
 }
 h2 {
   font-size: var(--s3);
-  line-height: 1;
-  line-height: 0.82;
+  line-height: var(--s3);
   font-weight: 800;
   letter-spacing: -0.03em;
   padding-bottom: var(--s-2);

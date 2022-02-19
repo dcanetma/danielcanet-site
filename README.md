@@ -1,99 +1,98 @@
-# Daniel Canet website
+# Daniel Canet professional website
 
-[![Build Status](https://travis-ci.org/dcanetma/danielcanet-site.svg?branch=main)](https://travis-ci.org/dcanetma/danielcanet-site)
+## Before you begin
 
-## Getting started
+This project requires that you install these next dependencies on your computer:
 
-Requirements are node and hexo client. 
+1. [install git](https://github.com/git-guides/install-git) on your computer.
+2. [install node](https://nodejs.org/en/) on your computer.
+3. have [a valid GitHub user](https://github.com/) with access to the project repository: [github.com/dcanetma/hodoandmarie-site/](https://github.com/dcanetma/hodoandmarie-site/).
+4. [Connect your computer with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) to GitHub.
 
-> To install node.js refer to the online documentation .
 
-So, first of all clone or download this repository on any folder. 
+## Downloading the project
 
-You'll need to install the Hexo CLI and the dependencies.
+First step, will be to download the code of the project on your computer. 
 
-Open a Terminal session, and on the new folder type this:
+1. Open a Terminal window.
+2. Execute these next commands below:
 
-``` 
-$ npm install -g hexo-cli  
-$ npm install  
+```bash
+
+# 1. Install Hexo.io
+npm install -g hexo-cli
+
+# 2. Download the source code from GitHub
+$ git clone https://github.com/dcanetma/danielcanet-site
+
+# 3. Go to the project's folder
+$ cd danielcanet-site
 ```
 
-> If you run into problems when using the -g option, check this URL for a quick fix.
-> url: https://stackoverflow.com/questions/33725639/npm-install-g-less-does-not-work-eacces-permission-denied
+> **Important**: You only need to execute the above commands once.
 
-## Configuration
+## Managing the website on your computer
 
-- Create a '_config.deploy.yml' file based on '_config.deploy.sample.yml'
-- Create a 'source/contact-credentials.php' file based on 'source/contact-credentials-sample.php'.
+Once you have donwloaded the project, you are ready to start managing the website contents.
 
-You're ready to go. :)
+1. Open a Terminal window.
+2. Execute these next commands below:
 
-## Commands
+```bash
+# 1. Go to the project's folder
+$ cd danielcanet-site
 
-Now you can run an instance of the site on your local machine.
+# 2. Install/update project dependencies (plugins and stuff)
+npm install
 
-``` 
-$ npm start
+# 3. Run the website on your computer
+npm start
 ```
 
-This will start a local instance of the site. Visit http://localhost:4000/. 
+3. Visit http://localhost:4000/ to watch the site.
 
-> PHP scripts will not work here.
+## Publish the website to the hosting provider
 
-To test the php scripts you'll need a local server with PHP support on you local machine.
+This project uses [GitHub Actions](https://github.com/features/actions) to publish the website to the internet.
 
-``` 
-$ npm run develop
-```
+The logic of the publishing procedure to the hosting server is store on this [GitHub Actions workflow file](.github/workflows/cy.yml).
 
-For Theme development. Runs a local instance of the site and proxies to an already existant local server with PHP support on 'http://danielca.dev/' indexing '/public' folder.
+Whenever you want to publish the website to your hosting provider, there are two methods available: 
+- [Automatic publishing method](#automatic-publishing-method)
+- [Manual publishing method](#manual-publishing-method)
 
+Both methods use the [FTP credentials stored on the secrets project settings](https://github.com/dcanetma/danielcanet-site/settings/secrets/actions) at GitHub.
 
-### Manual Deployment
+### Automatic publishing method
 
-Follow the instructions on the 'deploy' section of the HEXO 'config.yml' file and npm package commands.  
+1. Merge changes from master to deploy
+2. Go to [Actions tab on the GitHub's project](https://github.com/dcanetma/danielcanet-site/actions/workflows/cy.yml).
+3. Wait for the "Build and publish ..." job to finish.
+4. Visit the website at [www.danielca.net](http://www.danielca.net).
 
-You'll need to create a 'config.deploy.yml' file with the FTP credentials.
+### Manual publishing method
 
+1. Go to [Actions tab on the GitHub's project](https://github.com/dcanetma/danielcanet-site/actions).
+2. Select the ["Build and publish..." job](https://github.com/dcanetma/danielcanet-site/actions/workflows/cy.yml) 
+3. Run workflow on the desired branch. 
+4. Wait for the "Build and publish ..." job to finish.
+5. Visit the website at [www.danielca.net](http://www.danielca.net).
 
-``` 
-$ npm run deploy
-```
+#### Setting up FTP credentials
 
-Generates the site using the deploy variables file and publish its to the LIVE server using SFTP and the local connection. 
+**Important**: You will need to update these settings whenever you need to change the hosting provider or the FTP user and password.
 
-``` 
-$ npm run generate
-```
+You can manage the the [FTP credentials stored on the secrets project settings](https://github.com/dcanetma/danielcanet-site/settings/secrets/actions) at GitHub Actions.
 
-Generates the site using the deploy variables file and publish its to a local folder: 'public'.
-Useful for manual deploys to local/DEV server.
+The FTP configuration store at secrets is defined by these next settings:
 
+* `FTP_SERVER`: URL to publish the website to.
+* `FTP_USERNAME`: FTP username.
+* `FTP_PASSWORD`: FTP password.
+* `FTP_REMOTE`: Remote folder to publish to.
 
-### Continuous integration Deployment
-
-We use Travis for automated deployments to the live server.
-
-https://travis-ci.org/dcanetma/danielcanet-site
-
-> IMPORTANT: The deploy to the live server is only made on the 'deploy' branch.
-
-You may need to update the environment variables on Travis to set the credentials for both FTP & SMTP servers.
-
-
-#### CHMOD Permissions
-
-Set CHMOD permissions to 440 on the following files on the live server after the first deploy ever:
-
-    .htaccess
-    contact-credentials.php
-
-So whenever these files need to be updated to the live server, you'd need to delete them first.
-
-This security measure is important and it's adviced to follow it to avoid security issues.
-
+> **Note**: There are certain hosting providers, like CD-Mon, that disable their FTP service if it is not been used for 30 days. 
 
 ## License
 
-MIT - facts&fictions
+MIT - Daniel Canet
