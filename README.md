@@ -6,7 +6,7 @@ This project requires that you install these next dependencies on your computer:
 
 1. [install git](https://github.com/git-guides/install-git) on your computer.
 2. [install node](https://nodejs.org/en/) on your computer.
-3. have [a valid GitHub user](https://github.com/) with access to the project repository: [github.com/dcanetma/hodoandmarie-site/](https://github.com/dcanetma/hodoandmarie-site/).
+3. have [a valid GitHub user](https://github.com/) with access to the project repository: [github.com/dcanetma/danielcanet-site/](https://github.com/dcanetma/danielcanet-site/).
 4. [Connect your computer with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) to GitHub.
 
 

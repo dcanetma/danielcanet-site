@@ -1,8 +1,8 @@
-title: About
+title: Daniel Canet
 permalink: /
-date: 2021-02-01 18:14:42
+date: 2022-02-18 18:14:42
 layout: page
-description: Daniel Canet is a Software Engineering Manager based in Barcelona.
+description: Product manager, Software engineer & Creative technologist born and raised in Barcelona.
 --- 
 <div class="first stack">
     <img src="media/profile.jpg" alt="Profile pic from Daniel Canet" class="img-profile" />
@@ -63,7 +63,7 @@ description: Daniel Canet is a Software Engineering Manager based in Barcelona.
         more local, personal and art based projects. 
     </p>
     <p>
-        He also dedicates his spare time on <a href="https://www.google.com/search?safe=off&q=spaingovedits">experimental projects like Twitter bots</a> and enjoys collaborating with artists or creative studios like <a href="http://hodoandmarie.com/" title="Hodo & Marie website">Hodo & Marie for whom he designed and built their website for</a> as a way to explore intrinsic web design techniques on a real project.         
+        He also dedicates his spare time on <a href="https://www.google.com/search?safe=off&q=spaingovedits">experimental projects like Twitter bots</a> and enjoys collaborating with artists or creative studios like <a href="http://hodoandmarie.com/" title="Hodo & Marie website">Hodo & Marie for whom he designed and built their website for</a> as a way to explore Intrinsic web design techniques on a real project.         
         <!-- Like the <a href="https://www.guiri.club/" title="We Are Not Artists">Guiri Institute</a>, a research group on design, technology and motion-graphics. -->
     </p>
 </div>
