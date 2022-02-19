@@ -1,4 +1,4 @@
-title: Daniel Canet
+title: Product Manager & Software Engineer
 permalink: /
 date: 2022-02-18 18:14:42
 layout: page
