@@ -1,8 +1,8 @@
-title: Product Manager & Software Engineer
+title: Internet Product Manager & Software Engineer
 permalink: /
 date: 2022-02-18 18:14:42
 layout: page
-description: Product manager, Software engineer & Creative technologist born and raised in Barcelona.
+description: Internet Product manager, Software engineer & Creative technologist born and raised in Barcelona.
 --- 
 <div class="first stack">
     <img src="media/profile.jpg" alt="Profile pic from Daniel Canet" class="img-profile" />
@@ -35,9 +35,9 @@ description: Product manager, Software engineer & Creative technologist born and
 </div>
 <div class="last stack bio">
     <h2>
-        Product Manager & Software Engineer.
+        Internet Product Manager.
     </h2>
-    <p><b>Daniel Canet</b> is a Software Engineer from Barcelona. He is a graduate of
+    <p><b>Daniel Canet is a Software Engineer from Barcelona</b>. He is a graduate of
         the <a href="https://www.fib.upc.edu/en/fib">Facultat d'Informàtica de Barcelona (FIB)</a>, one
         of the top 10 computer science schools in Europe. 
     </p>
