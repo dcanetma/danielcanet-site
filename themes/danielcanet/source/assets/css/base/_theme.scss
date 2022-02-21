@@ -26,7 +26,7 @@ body {
 }
 
 #main > .inner {
-  padding: 0 var(--s3) var(--s2);
+  padding: 0 var(--s3) var(--s2) ;
   max-width: 100%;
   width: 78rem;
 }
@@ -200,6 +200,9 @@ ul.social li a:after {
   #main {
     margin: var(--s4) 0;
   }
+  #main > .inner {
+    padding: 0 var(--s-1) var(--s2) var(--s3);
+  }
   #main .first {
     text-align: left;
   }
@@ -235,6 +238,9 @@ ul.social li a:after {
   }
   .stack {
     align-items: flex-start;
+  }
+  p, li {
+    text-align: justify;
   }
 }
 
