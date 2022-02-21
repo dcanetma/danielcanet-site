@@ -98,12 +98,13 @@ a.btn {
 .social a:link,
 .social a:visited {
   text-decoration: none;
-  color: var(--color-link);
+  color: var(--color-text);
   font-weight: 400;
 }
 .social a:hover,
 .social a:active {
   font-weight: 400;
+  color: var(--color-link);
 }
 
 /* 6. Typography */
