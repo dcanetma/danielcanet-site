@@ -79,9 +79,6 @@ body {
 }
 
 /* 4. Links */
-a {
-  transition: color 0.3s ease-in-out 0s;
-}
 a:link,
 a:visited {
   color: var(--color-link);
@@ -306,12 +303,30 @@ body.dark-theme p b {
 body.dark-theme a:link,
 body.dark-theme a:visited {
   color: var(--color-dark-link);
+  text-decoration: underline;
 }
-
 body.dark-theme a:hover,
 body.dark-theme a:active {
-  color: var(--color-dark-hover);
+  text-decoration: none;
 }
+body.dark-theme a.btn {
+  text-decoration: none;
+}
+body.dark-theme a.btn:hover {
+  text-decoration: underline;
+}
+
+body.dark-theme .social a:link,
+body.dark-theme .social a:visited {
+  text-decoration: none;
+  color: var(--color-dark-link);
+}
+body.dark-theme .social a:hover,
+body.dark-theme .social a:active {
+  text-decoration: none;
+  color: var(--color-hover);
+}
+
 
 body.dark-theme #main .last::before {
   border-top-color: var(--color-dark-headline);
