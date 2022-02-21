@@ -82,24 +82,31 @@ body {
 a {
   transition: color 0.3s ease-in-out 0s;
 }
-a.btn {
-  font-weight: 600;
-  /* letter-spacing: -0.04em; 
-	  font-size: var(--s0); */
-}
 a:link,
 a:visited {
-  text-decoration: none;
   color: var(--color-link);
-  color: var(--color-text);
-  font-weight: bold;
-  font-weight: 400;
+  text-decoration: underline;
 }
 a:hover,
 a:active {
-  font-weight: bold;
+  color: var(--color-link);
+  text-decoration: none;
+}
+a.btn {
+  font-weight: 600;
+  text-decoration: none;
+  /* letter-spacing: -0.04em; 
+	  font-size: var(--s0); */
+}
+.social a:link,
+.social a:visited {
+  text-decoration: none;
+  color: var(--color-link);
   font-weight: 400;
-  color: var(--color-hover);
+}
+.social a:hover,
+.social a:active {
+  font-weight: 400;
 }
 
 /* 6. Typography */
