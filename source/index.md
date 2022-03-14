@@ -20,14 +20,14 @@ description: Digital Product manager, Software engineer & Creative technologist 
                 GitHub Fun
             </a>
         </li>
-        <li>
-            <a href="https://twitter.com/dcanetma" title="Visit Daniel Canet's Twitter profile">
-                Twitter
-            </a>
-        </li>
          <li>
             <a href="www.linkedin.com/in/dcanetma" title="Visit Daniel Canet's LinkedIn profile">
                 LinkedIn
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/dcanetma" title="Visit Daniel Canet's Twitter profile">
+                Twitter
             </a>
         </li>
     </ul>
