@@ -3,7 +3,9 @@ permalink: /
 date: 2022-02-18 18:14:42
 layout: page
 description: Digital Product manager, Software engineer & Creative technologist born and raised in Barcelona.
---- 
+
+---
+
 <div class="first stack">
     <img src="media/profile.jpg" alt="Profile pic from Daniel Canet" class="img-profile" />
     <h1>Daniel Canet</h1>
@@ -23,19 +25,19 @@ description: Digital Product manager, Software engineer & Creative technologist 
                 Twitter
             </a>
         </li>
-<!--         <li>
-            <a href="https://linkedin.com" title="Visit Daniel Canet's LinkedIn profile">
+         <li>
+            <a href="www.linkedin.com/in/dcanetma" title="Visit Daniel Canet's LinkedIn profile">
                 LinkedIn
             </a>
         </li>
- -->    </ul>
+    </ul>
     <p>
         <a href="mailto:hello@danielca.net" title="Contact by e-mail" class="btn">hello@danielca.net</a>
     </p>
 </div>
 <div class="last stack bio">
     <h2>
-        Digital Product Manager.
+        Product Manager & Web developer.
     </h2>
     <p><b>Daniel Canet is a Software Engineer from Barcelona</b>. He is a graduate of
         the <a href="https://www.fib.upc.edu/en/fib">Facultat d'Informàtica de Barcelona (FIB)</a>, one
@@ -46,10 +48,10 @@ description: Digital Product manager, Software engineer & Creative technologist 
         <b>Carrefour</b>, <b>Lacoste</b>, <b>Hangar.org</b>, <b>Volkswagen</b>, <b>Amnesty International</b>, <b>Bodegas Martín
         Códax</b>, <b>CREAF</b> and more. </p>
     <p>Daniel has been working as <b>Product & Engineering manager for internet products and companies</b> for almost two decades. He also <b>founded a succesful web development studio and a marketing & communication agency</b>. Passionate about product development, web programming, the open-source
-        movement, best practices, API-first approach and the API governance, agile methodologies, design systems and the use of storytelling to build succesful user experiences.
+        movement, best practices, API-first and API governance, agile methodologies, design systems and the use of storytelling to build succesful user experiences.
         <b>Enthusiastic about projects that have a positive impact</b> on health, culture and local communities.
     </p>
-    <p>Spent his early professional years on a national company using proprietary technologies from <b>IBM</b>
+    <p style="display:none">Spent his early professional years on a national company using proprietary technologies from <b>IBM</b>
         and <b>Microsoft</b>. After which he founded his first web development shop, <b>Strabinarius</b>, where he started
         to create experiences on the internet for remarkable brands. He then went on to work as an independent
         <b>creative technologist</b> and joined <a href="https://ouyeahstudio.com/" title="OuYeahStudio!">OuYeahStudio!</a>, a multidisciplinary design team from Barcelona. After that,
