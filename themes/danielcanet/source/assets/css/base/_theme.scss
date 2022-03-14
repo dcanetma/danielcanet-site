@@ -74,7 +74,7 @@ body {
 /* 3. Profile image styles */
 .img-profile {
   border-radius: 100%;
-  width: 14rem;
+  width: 13rem;
   display: inline-block;
 }
 
@@ -155,6 +155,9 @@ p b {
   font-weight: 400;
   color: var(--color-link);
 }
+p.small {
+  line-height: 1;
+}
 /* 7. Toggle mode */
 a.toggle-mode {
   position: fixed;
@@ -194,6 +197,9 @@ a.toggle-mode {
 ul.social {
   padding: 0;
   width: 100%;
+  li {
+    font-size: 92.5%;
+  }
 }
 ul.social li a:after {
   content: "\002015";

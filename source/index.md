@@ -34,6 +34,9 @@ description: Digital Product manager, Software engineer & Creative technologist 
     <p>
         <a href="mailto:hello@danielca.net" title="Contact by e-mail" class="btn">hello@danielca.net</a>
     </p>
+    <p class="small">
+    <small><b>Full-stack web developer</b>: Javascript, Node, Angular, React, VueJs, Google Workspace Apps, PHP, Drupal Architect, Moodle developer, Ruby on Rails, HTML, CSS, Relational DBs, GraphQL, Jenkins, TravisCI, GH Actions.</small>   
+    </p>
 </div>
 <div class="last stack bio">
     <h2>
@@ -44,11 +47,11 @@ description: Digital Product manager, Software engineer & Creative technologist 
         of the Top 10 computer science schools in Europe. 
     </p>
     <p>He currently works as <b>Integrations Product Manager</b> for <a href="https://www.wiris.com/"
-            title="Current position">MathType at Wiris</a>, a math and science software company based in Barcelona, Spain. Previous collaborations include <b>CASIO</b>, <b>BMW</b>,
+            title="Current position">MathType at Wiris</a>, a math and science software company based in Barcelona, Spain. Previous projects include collaborations with companies like <b>CASIO</b>, <b>BMW</b>,
         <b>Carrefour</b>, <b>Lacoste</b>, <b>Hangar.org</b>, <b>Volkswagen</b>, <b>Amnesty International</b>, <b>Bodegas Martín
         Códax</b>, <b>CREAF</b> and more. </p>
     <p>Daniel has been working as <b>Product & Engineering manager for internet products and companies</b> for almost two decades. He also <b>founded a succesful web development studio and a marketing & communication agency</b>. Passionate about product development, web programming, the open-source
-        movement, best practices, API-first and API governance, agile methodologies, design systems and the use of storytelling to build succesful user experiences.
+        movement, <b>best practices, API-first and API governance</b>, agile methodologies, science and maths, design systems and the use of storytelling to build succesful software experiences.
         <b>Enthusiastic about projects that have a positive impact</b> on health, culture and local communities.
     </p>
     <p style="display:none">Spent his early professional years on a national company using proprietary technologies from <b>IBM</b>
