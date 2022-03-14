@@ -35,7 +35,7 @@ description: Digital Product manager, Software engineer & Creative technologist 
         <a href="mailto:hello@danielca.net" title="Contact by e-mail" class="btn">hello@danielca.net</a>
     </p>
     <p class="small">
-    <small><b>Full-stack web developer</b>: Javascript, Node, Angular, React, VueJs, Google Workspace Apps, PHP, Drupal Architect, Moodle developer, Ruby on Rails, HTML, CSS, Relational DBs, GraphQL, Jenkins, TravisCI, GH Actions.</small>   
+    <small><b>Full Stack Engineer</b>: Javascript, Node, Angular, React, VueJs, Google Workspace Apps, PHP, Drupal Architect, Moodle developer, Ruby on Rails, HTML, CSS, Relational DBs, GraphQL, Jenkins, TravisCI, GH Actions.</small>   
     </p>
 </div>
 <div class="last stack bio">
