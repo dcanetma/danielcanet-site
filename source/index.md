@@ -39,15 +39,14 @@ description: Digital Product manager, Software engineer & Creative technologist 
     </h2>
     <p><b>Daniel Canet is a Software Engineer from Barcelona</b>. He is a graduate of
         the <a href="https://www.fib.upc.edu/en/fib">Facultat d'Informàtica de Barcelona (FIB)</a>, one
-        of the top 10 computer science schools in Europe. 
+        of the Top 10 computer science schools in Europe. 
     </p>
-    <p>He currently works as <b>Senior Product Manager</b> for <a href="https://www.wiris.com/"
-            title="Current position">MathType Integrations at Wiris</a>, a math and science software company based in Barcelona, Spain. 
-    <br>Previous collaborations include <b>CASIO</b>, <b>BMW</b>,
+    <p>He currently works as <b>Integrations Product Manager</b> for <a href="https://www.wiris.com/"
+            title="Current position">MathType at Wiris</a>, a math and science software company based in Barcelona, Spain. Previous collaborations include <b>CASIO</b>, <b>BMW</b>,
         <b>Carrefour</b>, <b>Lacoste</b>, <b>Hangar.org</b>, <b>Volkswagen</b>, <b>Amnesty International</b>, <b>Bodegas Martín
         Códax</b>, <b>CREAF</b> and more. </p>
     <p>Daniel has been working as <b>Product & Engineering manager for internet products and companies</b> for almost two decades. He also <b>founded a succesful web development studio and a marketing & communication agency</b>. Passionate about product development, web programming, the open-source
-        movement, best practices, API-first approach and the API economy, agile methodologies, design systems and the use of storytelling to build succesful user experiences.
+        movement, best practices, API-first approach and the API governance, agile methodologies, design systems and the use of storytelling to build succesful user experiences.
         <b>Enthusiastic about projects that have a positive impact</b> on health, culture and local communities.
     </p>
     <p>Spent his early professional years on a national company using proprietary technologies from <b>IBM</b>
