@@ -252,6 +252,9 @@ ul.social li a:after {
   }
   p, li {
     text-align: justify;
+    &.contact {
+      text-align: left;
+    }
   }
 }
 
