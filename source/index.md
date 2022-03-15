@@ -35,12 +35,12 @@ description: Digital Product manager, Software engineer & Creative technologist 
         <a href="mailto:hello@danielca.net" title="Contact by e-mail" class="btn">hello@danielca.net</a>
     </p>
     <p class="small">
-    <small><b>Full Stack Web Engineer</b>: Javascript, Node, Angular, React, VueJs, Google Workspace Apps, PHP, Drupal Architect, Moodle developer, Ruby on Rails, HTML, CSS, API-first, Relational DBs, GraphQL, Jenkins, TravisCI, GH Actions.</small>   
+    <small><b>Full Stack Web Engineer</b>: Javascript, Node, Angular, React, VueJs, Google Workspace Apps, PHP, Drupal Architect, Moodle developer, Ruby on Rails, Java, Python, HTML, CSS, API-first, Relational DBs, GraphQL, Jenkins, TravisCI, GitHub Actions, PHPUnit, Behat, Cypress, Jest, Gherkin, Google Data Studio, Pentaho BI, Oracle BI, ...</small>   
     </p>
 </div>
 <div class="last stack bio">
     <h2>
-        Product Manager & Web developer.
+        Product Manager & Web Engineer.
     </h2>
     <p><b>Daniel Canet is a Software Engineer from Barcelona</b>. He is a graduate of
         the <a href="https://www.fib.upc.edu/en/fib">Facultat d'Informàtica de Barcelona (FIB)</a>, one
@@ -48,11 +48,11 @@ description: Digital Product manager, Software engineer & Creative technologist 
     </p>
     <p>He currently works as <b>Integrations Product Manager</b> for <a href="https://www.wiris.com/"
             title="Current position">MathType at Wiris</a>, a math and science software company based in Barcelona, Spain. Previous projects include collaborations with companies like <b>CASIO</b>, <b>BMW</b>,
-        <b>Carrefour</b>, <b>Lacoste</b>, <b>Hangar.org</b>, <b>Volkswagen</b>, <b>Amnesty International</b>, <b>Bodegas Martín
+        <b>Carrefour</b>, <b>Lacoste</b>, <b>Hangar.org</b>, <b>Volkswagen</b>, <b>Amnesty International</b>, <b>Coca-Cola</b>, <b>Bodegas Martín
         Códax</b>, <b>CREAF</b> and more. </p>
     <p>Daniel has been working as <b>Product & Engineering manager for internet products and companies</b> for almost two decades. He also <b>founded a succesful web development studio and a marketing & communication agency</b>. Passionate about product development, web programming, the open-source
-        movement, <b>best practices, API-first and API governance</b>, agile methodologies, science and maths, design systems and the use of storytelling to build succesful software experiences.
-        <b>Enthusiastic about projects that have a positive impact</b> on health, culture and local communities.
+        movement, <b>technical writing and documentation, best practices, API-first and API governance</b>, agile methodologies, science and maths, design systems and the use of storytelling to build succesful software experiences.
+        <b>Enthusiastic about projects that have a positive impact</b> on education, nature, health, culture and local communities.
     </p>
     <p style="display:none">Spent his early professional years on a national company using proprietary technologies from <b>IBM</b>
         and <b>Microsoft</b>. After which he founded his first web development shop, <b>Strabinarius</b>, where he started
