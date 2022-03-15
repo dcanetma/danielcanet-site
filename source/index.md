@@ -32,10 +32,10 @@ description: Digital Product manager, Software engineer & Creative technologist 
         </li>
     </ul>
     <p class="contact">
-        <a href="mailto:hello@danielca.net" title="Contact by e-mail" class="btn">hello@danielca.net</a> / Barcelona
+        <a href="mailto:hello@danielca.net" title="Contact by e-mail" class="btn">hello@danielca.net</a> / Barcelona.
     </p>
     <p class="small">
-    <small><b>Full Stack Web Engineer</b>: Javascript, Node, Angular, React, VueJs, Google Workspace Apps, PHP, Drupal Architect, Moodle developer, Laravel, Ruby on Rails, Java, Python, API-first, API Design-first, OpenAPI, HTML, CSS, Relational DBs, GraphQL, Jenkins, TravisCI, GitHub Actions, TDD, PHPUnit, Behat, Cypress, Jest, Gherkin, Data Analytics, Google Data Studio, Pentaho, Oracle BI ...</small>   
+    <small><b>Full Stack Web Engineer</b>: Javascript, Node, Angular, React, VueJs, Google Workspace Apps, PHP, Drupal Architect, Moodle developer, Laravel, Ruby on Rails, Java, Python, API-first, API Design-first, HTML, CSS, Relational DBs, GraphQL, <b>CI/CD</b>:Jenkins, TravisCI, GitHub Actions, <b>TDD</b>: PHPUnit, Behat, Cypress, Jest, Gherkin, <b>Data Analytics</b>:, Google Data Studio, Pentaho, Oracle BI ...</small>   
     </p>
 </div>
 <div class="last stack bio">
@@ -63,7 +63,7 @@ description: Digital Product manager, Software engineer & Creative technologist 
         more local, personal and art based projects. 
     </p>
     <p>
-        He also dedicates his spare time on <a href="https://www.google.com/search?safe=off&q=spaingovedits">experimental projects like Twitter bots</a> and enjoys collaborating with artists and creative studios like <a href="http://hodoandmarie.com/" title="Hodo & Marie website">Hodo & Marie for whom he designed and built their website for</a>, to explore Intrinsic web design techniques on a real world project.         
+        He also <b>dedicates his spare time</b> on <a href="https://www.google.com/search?safe=off&q=spaingovedits">experimental projects like Twitter bots</a> and enjoys collaborating with artists and creative studios like <a href="http://hodoandmarie.com/" title="Hodo & Marie website">Hodo & Marie for whom he designed and built their website for</a>, to explore Intrinsic web design techniques on a real world project.         
         <!-- Like the <a href="https://www.guiri.club/" title="We Are Not Artists">Guiri Institute</a>, a research group on design, technology and motion-graphics. -->
     </p>
 </div>
