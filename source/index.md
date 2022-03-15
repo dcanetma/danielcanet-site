@@ -51,8 +51,8 @@ description: Digital Product manager, Software engineer & Creative technologist 
             title="Current position">MathType at Wiris</a>, a math and science software company based in Barcelona, Spain. Previous projects include collaborations with companies like <b>CASIO</b>, <b>BMW</b>,
         <b>Carrefour</b>, <b>Lacoste</b>, <b>Hangar.org</b>, <b>Volkswagen</b>, <b>Amnesty International</b>, <b>Coca-Cola</b>, <b>Bodegas Martín
         Códax</b>, <b>CREAF</b> and more. </p>
-    <p>Daniel has been working as <b>Product & Engineering manager for internet products and companies</b> for almost two decades. He also <b>founded a succesful web development studio and a marketing & communication agency</b>. Passionate about product development, web programming, the open-source
-        movement, <b>technical writing and documentation, best practices, API-first and API governance</b>, agile methodologies, science and maths, design systems and the use of storytelling to build succesful software experiences.
+    <p>Daniel has been working as <b>Product & Engineering manager for internet products and companies</b> for almost two decades. He also <b>founded a successful web development studio and a marketing & communication agency</b>. Passionate about product development, web programming, the open-source
+        movement, <b>technical writing and documentation, best practices, API-first and API governance</b>, agile methodologies, science and math, design systems and the use of storytelling to build successful software experiences.
         <b>Enthusiastic about projects that have a positive impact</b> on education, nature, health, culture and local communities.
     </p>
     <p style="display:none">Spent his early professional years on a national company using proprietary technologies from <b>IBM</b>
