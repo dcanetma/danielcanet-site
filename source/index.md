@@ -21,7 +21,7 @@ description: Digital Product manager, Software engineer & Creative technologist 
             </a>
         </li>
          <li>
-            <a href="www.linkedin.com/in/dcanetma" title="Visit Daniel Canet's LinkedIn profile">
+            <a href="https://www.linkedin.com/in/dcanetma" title="Visit Daniel Canet's LinkedIn profile">
                 LinkedIn
             </a>
         </li>
