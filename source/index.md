@@ -35,7 +35,7 @@ description: Digital Product manager, Software engineer & Creative technologist 
         <a href="mailto:hello@danielca.net" title="Contact by e-mail" class="btn">hello@danielca.net</a> / Barcelona.
     </p>
     <p class="small">
-    <small><b>Full Stack Web Engineer</b>: Javascript, Node, Angular, React, VueJs, Google Workspace Apps, PHP, Drupal Architect, Moodle developer, Laravel, Ruby on Rails, Java, Python, API-first, API Design-first, HTML, CSS, Relational DBs, GraphQL, <b>CI/CD</b>:Jenkins, TravisCI, GitHub Actions, <b>TDD</b>: PHPUnit, Behat, Cypress, Jest, Gherkin, <b>Data Analytics</b>:, Google Data Studio, Pentaho, Oracle BI ...</small>   
+    <small><b>Full Stack Web Engineer</b>: Javascript, Node, Angular, React, VueJs, Google Workspace Apps, PHP, Drupal Architect, Moodle developer, Laravel, Ruby on Rails, Java, Python, <b>API-first</b>, API Design-first, HTML, CSS, Relational DBs, GraphQL, <b>CI/CD</b>:Jenkins, TravisCI, GitHub Actions, <b>TDD</b>: PHPUnit, Behat, Cypress, Jest, Gherkin, <b>Data Analytics</b>:, Google Data Studio, Pentaho, Oracle BI ...</small>   
     </p>
 </div>
 <div class="last stack bio">
@@ -51,7 +51,7 @@ description: Digital Product manager, Software engineer & Creative technologist 
         <b>Carrefour</b>, <b>Lacoste</b>, <b>Hangar.org</b>, <b>Volkswagen</b>, <b>Amnesty International</b>, <b>Coca-Cola</b>, <b>Bodegas Martín
         Códax</b>, <b>CREAF</b> and more. </p>
     <p>Daniel has been working as <b>Product & Engineering manager for internet products and companies</b> for almost two decades. He also <b>founded a successful web development studio and a marketing & communication agency</b>. Passionate about product development, web programming, the open-source
-        movement, <b>technical writing and documentation, best practices, API-first and the API landscape</b>, agile methodologies, science and math, design systems and the use of storytelling to build successful software experiences.
+        movement, <b>technical writing and documentation, best practices, API-first and the API landscape</b>, agile methodologies, data analysis, science and math, design systems and the use of data and storytelling to build together successful software experiences.
         <b>Enthusiastic about projects that have a positive impact</b> on education, nature, health, culture and local communities.
     </p>
     <p style="display:none">Spent his early professional years on a national company using proprietary technologies from <b>IBM</b>
