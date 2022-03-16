@@ -46,7 +46,7 @@ description: Digital Product manager, Software engineer & Creative technologist 
         the <a href="https://www.fib.upc.edu/en/fib">Facultat d'Informàtica de Barcelona (FIB)</a>, one
         of the Top 10 computer science schools in Europe. 
     </p>
-    <p>He currently works as <b>Integrations Product Manager</b> for <a href="https://www.wiris.com/"
+    <p>He currently works as <b>Integrations Product Manager</b> for <a href="https://www.wiris.com/en/solutions/integrations/"
             title="Current position">MathType at Wiris</a>, a math and science software company based in Barcelona, Spain. Previous projects include collaborations with companies like <b>CASIO</b>, <b>BMW</b>,
         <b>Carrefour</b>, <b>Lacoste</b>, <b>Hangar.org</b>, <b>Volkswagen</b>, <b>Amnesty International</b>, <b>Coca-Cola</b>, <b>Bodegas Martín
         Códax</b>, <b>CREAF</b> and more. </p>
