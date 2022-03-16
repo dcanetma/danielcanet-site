@@ -51,19 +51,10 @@ description: Digital Product manager, Software engineer & Creative technologist 
         <b>Carrefour</b>, <b>Lacoste</b>, <b>Hangar.org</b>, <b>Volkswagen</b>, <b>Amnesty International</b>, <b>Coca-Cola</b>, <b>Bodegas Martín
         Códax</b>, <b>CREAF</b> and more. </p>
     <p>Daniel has been working as <b>Product & Engineering manager for internet products and companies</b> for almost two decades. He also <b>founded a successful web development studio and a marketing & communication agency</b>. Passionate about product development, web programming, the open-source
-        movement, <b>technical writing and documentation, best practices, API-first and the API landscape</b>, agile methodologies, data analysis, science and math, design systems and the use of data and storytelling to build together successful software experiences.
+        movement, <b>technical writing and documentation, best practices, API-first and the API landscape</b>, agile methodologies, design systems and the use of storytelling, combined with data, to build successful software experiences for users.
         <b>Enthusiastic about projects that have a positive impact</b> on education, nature, health, culture and local communities.
-    </p>
-    <p style="display:none">Spent his early professional years on a national company using proprietary technologies from <b>IBM</b>
-        and <b>Microsoft</b>. After which he founded his first web development shop, <b>Strabinarius</b>, where he started
-        to create experiences on the internet for remarkable brands. He then went on to work as an independent
-        <b>creative technologist</b> and joined <a href="https://ouyeahstudio.com/" title="OuYeahStudio!">OuYeahStudio!</a>, a multidisciplinary design team from Barcelona. After that,
-        he joined <a href="https://season.es/" title="Season">Season</a>, where he directed a bunch of designers, coders and marketers, while being a senior contributor for back-end, front-end code and deploy automation. More recently he
-        founded <b>facts&fictions</b>, a creative studio to improve tools and methodologies while focusing on
-        more local, personal and art based projects. 
     </p>
     <p>
         He also <b>dedicates his spare time</b> on <a href="https://www.google.com/search?safe=off&q=spaingovedits">experimental projects like Twitter bots</a> and enjoys collaborating with artists and creative studios like <a href="http://hodoandmarie.com/" title="Hodo & Marie website">Hodo & Marie for whom he designed and built their website for</a>, to explore Intrinsic web design techniques on a real world project.         
-        <!-- Like the <a href="https://www.guiri.club/" title="We Are Not Artists">Guiri Institute</a>, a research group on design, technology and motion-graphics. -->
     </p>
 </div>
