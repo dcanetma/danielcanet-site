@@ -1,6 +1,6 @@
 {
   "name": "danielcanet-site",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Professional profile website for Daniel Canet",
   "scripts": {
     "publish": "git checkout deploy && git merge origin/main --ff-only && git push && git checkout main",
@@ -21,12 +21,13 @@
   },
   "dependencies": {
     "hexo": "^5.0.0",
-    "hexo-auto-canonical": ">=0.1.1",
-    "hexo-autoprefixer": ">=2.0.0",
-    "hexo-browsersync": ">=0.3.0",
+    "hexo-auto-canonical": "^0.1.1",
+    "hexo-autoprefixer": "^2.0.0",
+    "hexo-browsersync": "^0.3.0",
+    "hexo-html-minifier": "^1.0.0",
+    "hexo-renderer-dartsass": "^0.1.2",
     "hexo-renderer-ejs": ">=0.3.1",
     "hexo-renderer-marked": ">=2.0.0",
-    "hexo-renderer-sass": ">=0.4.0",
-    "hexo-server": "^2.0.0"
+    "hexo-server": "^3.0.0"
   }
 }
