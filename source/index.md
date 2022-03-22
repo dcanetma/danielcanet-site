@@ -34,8 +34,8 @@ description: Digital Product manager, Software engineer & Creative technologist 
     <p class="contact">
         <a href="mailto:hello@danielca.net" title="Contact by e-mail" class="btn">hello@danielca.net</a> / Barcelona.
     </p>
-    <p class="small">
-    <small><b>Full Stack Web Engineer</b>: Javascript, Node, Angular, React, VueJs, Google Workspace Apps, PHP, Drupal Architect, Moodle developer, Laravel, Ruby on Rails, Java, Python, <b>API-first</b>, API Design-first, HTML, CSS, Relational DBs, GraphQL, <b>CI/CD</b>:Jenkins, TravisCI, GitHub Actions, <b>TDD</b>: PHPUnit, Behat, Cypress, Jest, Gherkin, <b>Data Analytics</b>:, Google Data Studio, Pentaho, Oracle BI ...</small>   
+    <p class="small" style="display:none">
+        <small><b>Full Stack Web Engineer</b>: Javascript, Node, Angular, React, VueJs, Google Workspace Apps, PHP, Drupal Architect, Moodle developer, Laravel, Ruby on Rails, Java, Python, <b>API-first</b>, API Design-first, HTML, CSS, Relational DBs, GraphQL, <b>CI/CD</b>:Jenkins, TravisCI, GitHub Actions, <b>TDD</b>: PHPUnit, Behat, Cypress, Jest, Gherkin, <b>Data Analytics</b>:, Google Data Studio, Pentaho, Oracle BI ...</small>   
     </p>
 </div>
 <div class="last stack bio">
