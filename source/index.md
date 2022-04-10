@@ -1,6 +1,6 @@
 title: Internet Product Manager & Software Engineer
 permalink: /
-date: 2022-02-18 18:14:42
+date: 2022-04-09 18:14:42
 layout: page
 description: Digital Product manager, Software engineer & Creative technologist born and raised in Barcelona.
 
@@ -35,8 +35,10 @@ description: Digital Product manager, Software engineer & Creative technologist 
                 Twitter
             </a>
         </li>
+        <li>
+            <a href="mailto:hello@danielca.net" title="Contact by e-mail">
+                Email
+            </a>
+        </li>        
     </ul>
-    <p class="contact">
-        <a href="mailto:hello@danielca.net" title="Contact by e-mail" class="btn">hello@danielca.net</a> / Barcelona.
-    </p>
 </div>
