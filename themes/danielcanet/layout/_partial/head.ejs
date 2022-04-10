@@ -5,7 +5,7 @@
     <%
     var title = page.title;
     %>
-    <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+    <title><%= config.title %><% if (title){ %> | <%= title %><% } %></title>
     <link rel="manifest" href="<%= url_for('site.webmanifest') %>">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#111111">
