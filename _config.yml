@@ -8,12 +8,12 @@ description: Software Engineer
 keywords:
 author: Daniel Canet
 language: en
-timezone: 'ES'
+timezone: ''
 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.danielca.net
+url: https://www.danielca.net
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
