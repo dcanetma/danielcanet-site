@@ -27,8 +27,9 @@ body {
 
 #main > .inner {
   padding: 0 var(--s3) var(--s2) ;
-  max-width: 100%;
-  width: 78rem;
+  padding: 0;
+  max-width: 47rem;
+  width: 100%;
 }
 
 /* ↓ targets the intermediary wrapper */
@@ -36,6 +37,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: calc(var(--s1) * -1);
+  align-items: center;
+  justify-content: center;
 }
 
 #main > * > * {
@@ -44,9 +47,8 @@ body {
 }
 
 #main .first {
-  flex-basis: 36ch;
+  flex-basis: 15rem;
   flex-grow: 1;
-  text-align: right;
   position: relative;
 }
 
@@ -68,15 +70,15 @@ body {
   flex-basis: 0;
   flex-grow: 999;
   align-items: flex-start;
-  min-width: calc(50% - var(--s2));
+  min-width: calc(58% - var(--s2));
 }
 
 /* 3. Profile image styles */
 .img-profile {
   border-radius: 100%;
-  width: 14rem;
+  width: 100vw;
   display: inline-block;
-  border: 0.2em solid black;
+  border: var(--s-3) solid black;
   transition: border-color var(--theme-switch-duration) ease-in-out 0s;
 }
 
@@ -92,7 +94,7 @@ a:active {
   text-decoration: none;
 }
 a.btn {
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   /* letter-spacing: -0.04em; 
 	  font-size: var(--s0); */
@@ -132,17 +134,16 @@ h6 {
 }
 
 h1 {
-  font-size: var(--s3);
-  line-height: 0.82;
+  font-size: var(--s4);
+  line-height: 1;
   font-weight: 800;
   letter-spacing: -0.03em;
 }
 h2 {
-  font-size: var(--s3);
-  line-height: var(--s3);
-  font-weight: 300;
+  font-size: var(--s0);
+  line-height: 1;
+  font-weight: 600;
   letter-spacing: -0.03em;
-  padding-bottom: var(--s-2);
 }
 h3 {
   font-size: var(--s3);
@@ -200,12 +201,22 @@ ul.social {
   padding: 0;
   width: 100%;
   li {
+    display: inline;
     font-size: 92.5%;
+    a {
+      &:after {
+        content: "·";
+        padding-left: var(--s-4);
+        padding-right: var(--s-4);
+      }
+    }
+    &:last-child {
+      a:after {
+        content: "";
+        padding-right: 0;
+      }
+    }
   }
-}
-ul.social li a:after {
-  content: "\002015";
-  padding-left: var(--s-4);
 }
 
 /* 9. Media Queries.  */

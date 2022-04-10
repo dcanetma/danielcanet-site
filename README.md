@@ -20,7 +20,7 @@ First step, will be to download the code of the project on your computer.
 ```bash
 
 # 1. Install Hexo.io
-npm install -g hexo-cli
+npm install -g hexo
 
 # 2. Download the source code from GitHub
 $ git clone https://github.com/dcanetma/danielcanet-site
