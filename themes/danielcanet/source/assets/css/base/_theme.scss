@@ -193,7 +193,7 @@ ul.contact {
       padding-right: var(--s-2);
     }
     &:last-child {
-      a:after {
+      &:after {
         content: "";
         padding-right: 0;
       }
