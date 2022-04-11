@@ -113,7 +113,7 @@ body {
   border-radius: 100%;
   border-style: solid;
   border-color: var(--color-text);
-  border-width: 8px;
+  border-width: var(--s-1);
 }
 
 /* B. Typography and colors*/
@@ -171,7 +171,6 @@ p.small {
 a:link,
 a:visited {
   font-size: var(--s0);
-  font-size: 0.825rem;
   font-weight: 200;
   color: var(--color-link);
   text-decoration: none;
@@ -274,7 +273,7 @@ body.dark-theme #main .last::after {
     margin: 0;
   }
   #main > .inner {
-    padding: var(--s1) 0 var(--s2) var(--s1);
+    padding: var(--s1) 0 var(--s3) var(--s1);
   }
   #main .first {
     text-align: center;
@@ -288,32 +287,40 @@ body.dark-theme #main .last::after {
     margin-top: 0;
     align-items: center;
   }
+  #main > * > * {
+    /* ↓ applies to both elements */
+    margin: var(--s-1);
+  }
   .stack {
     align-items: flex-start;
     text-align: center;
   }
-
+  .stack > * + * {
+    margin-top: var(--s-1);
+  }
   .img-profile {
     margin-left: auto;
     margin-right: auto;
-    max-width: 11rem;
+    max-width: 10.5rem;
     min-width: 9rem;
   }
-
   h1 {
     font-size: var(--s2);
     line-height: calc(0.825 * var(--s2));
   }
   h2 {
-    font-size: var(--s0);
+    font-size: calc(var(--s1) * 0.75);
     max-width: 18ch;
   }
-  p,
-  li {
-    font-size: calc(0.925 * var(--s0));
-    line-height: var(--line--height-sm);
-    font-weight: normal;
+  p {
+    font-size: calc(var(--s0) * 0.925);
+    line-height: 1.125;
+    font-weight: 300;
     max-width: 66ch;
-    min-width: 34ch;
+    min-width: 27ch;
+  }
+  a:link,
+  a:visited {
+    font-size: calc(var(--s0) * 0.75);
   }
 }
