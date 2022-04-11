@@ -170,6 +170,7 @@ p.small {
 a:link,
 a:visited {
   font-size: var(--s0);
+  font-size: 0.825rem;
   font-weight: 200;
   color: var(--color-link);
   text-decoration: none;
@@ -314,9 +315,5 @@ body.dark-theme #main .last::after {
   li {
     font-size: var(--s0);
     font-weight: normal;
-  }
-  a:link,
-  a:visited {
-    font-size: var(--s0);
   }
 }

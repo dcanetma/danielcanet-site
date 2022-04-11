@@ -14,10 +14,10 @@ description: Software engineer, Digital product manager & Creative technologist 
     <ul class="contact" role="list">
         <li><a href="mailto:hello@danielca.net" title="Contact by e-mail">Email</a></li>        
         <li><a href="https://www.linkedin.com/in/dcanetma" title="Visit Daniel Canet's LinkedIn profile">LinkedIn</a></li>
+        <li><a href="https://github.com/dcanet-at-wiris" title="Visit Daniel Canet's GitHub profile from Wiris">GitHub</a></li>
         <li><a href="https://twitter.com/dcanetma" title="Visit Daniel Canet's Twitter profile">Twitter</a></li>
         <!--         
-        <li style="display:none"><a href="https://github.com/dcanetma" title="Visit Daniel Canet's GitHub profile">GitHub Fun</a></li>
-        <li style="display:none"><a href="https://github.com/dcanet-at-wiris" title="Visit Daniel Canet's GitHub profile from Wiris">GitHub</a></li>
+        <li><a href="https://github.com/dcanetma" title="Visit Daniel Canet's GitHub profile">GitHub Fun</a></li>
         -->
     </ul>
 </div>
