@@ -9,7 +9,7 @@ description: Daniel Canet is Barcelona City-based Software engineer, Digital pro
 </div>
 <div class="last stack bio">
     <h1>Daniel Canet</h1>
-    <h2>Software Engineer & Creative Technologist</h2>
+    <h2>Software Engineer & Digital Product Manager</h2>
     <p>I've been building software and leading multidisciplinary teams for two decades. Worked in engineering and leadership roles helping successful companies make great products.</p>
     <ul class="contact">
         <li><a href="mailto:hello@danielca.net" title="Contact by e-mail">Email</a></li>        
