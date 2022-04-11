@@ -113,7 +113,7 @@ body {
   border-radius: 100%;
   border-style: solid;
   border-color: var(--color-text);
-  border-width: var(--s-1);
+  border-width: var(--s-2);
 }
 
 /* B. Typography and colors*/
@@ -170,7 +170,7 @@ p.small {
 /* C. Links */
 a:link,
 a:visited {
-  font-size: var(--s0);
+  font-size: calc(0.875 * var(--s0));
   font-weight: 200;
   color: var(--color-link);
   text-decoration: none;
