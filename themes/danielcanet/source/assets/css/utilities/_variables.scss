@@ -1,8 +1,8 @@
 /* 1. Layout */
 /* Set the CSS custom variables. */
 :root {
-  /* Modular scale variables, from https://every-layout.dev/rudiments/modular-scale/. */
-  --ratio: 1.334;
+  /* A. Modular scale variables, from https://every-layout.dev/rudiments/modular-scale/. */
+  --ratio: 1.5;
 
   --s-6: calc(var(--s-5) / var(--ratio));
   --s-5: calc(var(--s-4) / var(--ratio));
@@ -18,35 +18,36 @@
   --s5: calc(var(--s4) * var(--ratio));
   --s6: calc(var(--s5) * var(--ratio));
 
-  /* Define theme colors. */
+  /* B. Theme colors. */
+  --color-bg: #ffffff;
   --color-headline: #000000;
-  --color-text: #5a5a5a;
-  --color-link: #111111;
-  --color-hover: #7d7d7d;
+  --color-text: #000000;
+  --color-link: #343434;
+  --color-hover: #111111;
 
   --color-dark-bg: #111111;
   --color-dark-headline: #ffffff;
-  --color-dark-text: #aaaaaa;
+  --color-dark-text: #ffffff;
   --color-dark-link: #cecece;
   --color-dark-hover: #ababab;
 
-  /* Define typography variables. */
+  /* C. Typography variables. */
   --font-plain: "Inter", Helvetica, "Trebuchet MS", Verdana, sans-serif;
   --font-serif: Georgia, serif;
 
-  --line-height: var(--ratio);
-
-  /* --line--height-sm: calc(var(--ratio) / var(--ratio));  */
-
+  --line-height: var(--s1);
   --line--height-sm: 1;
-
   --font-size-sm: var(--s-3);
 
-  --theme-switch-duration: 1.5s;
-
+  font-family: var(--font-plain);
   font-size: 1em;
   line-height: var(--line-height);
-
-  font-family: var(--font-plain);
   letter-spacing: 0.002em;
+
+  /* D. Other properties */
+  
+  
+  --theme-layout-width: 52rem;
+  --theme-layout-img-width: 17rem; 
+  --theme-switch-duration: 1.5s;
 }
