@@ -268,7 +268,7 @@ body.dark-theme #main .last::after {
 }
 
 /* G. Media queries */
-@media (max-width: 52rem) {
+@media (max-width: 52.5rem) {
   #wrapper {
     justify-content: center;
   }
@@ -347,24 +347,24 @@ body.dark-theme #main .last::after {
     max-width: 6rem;
   }
   h1 {
-    font-size: var(--s2);
-    line-height: calc(0.825 * var(--s2));
+    font-size: calc(0.875 * var(--s3));
+    line-height: calc(0.825 * var(--s3));
   }
   h2 {
-    font-size: var(--s0);
+    font-size: calc(var(--s1) * 0.875);
     max-width: 18ch;
   }
   p {
-    font-size: calc(var(--s0) * 0.875);
+    font-size: var(--s0);
     line-height: 1.25;
-    font-weight: 300;
+    font-weight: normal;
     max-width: 66ch;
     min-width: 27ch;
     text-align: justify;
   }
   a:link,
   a:visited {
-    font-size: calc(var(--s0) * 0.75);
-    font-weight: 500;
+    font-size: calc(var(--s0) * 0.825);
+    font-weight: 200;
   }
 }
