@@ -322,6 +322,9 @@ body.dark-theme #main .last::after {
     max-width: 80vw;
     min-width: none;
     text-align: left;
+    span {
+      display: inline;
+    }
   }
   a:link,
   a:visited {
@@ -362,7 +365,10 @@ body.dark-theme #main .last::after {
     font-weight: normal;
     max-width: 66ch;
     min-width: 27ch;
-    text-align: left;
+    text-align: center;
+    span {
+      display: none;
+    }
   }
   a:link,
   a:visited {
