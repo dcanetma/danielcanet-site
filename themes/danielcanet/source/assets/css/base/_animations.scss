@@ -1,6 +1,7 @@
 /* Animations */
 body {
-  transition: background-color var(--theme-switch-duration) ease-in-out 0s;
+  transition: background-color var(--theme-switch-duration) ease-in-out 0s,
+    color var(--theme-switch-duration) ease-in-out 0s;
 }
 h1,
 h2,
@@ -10,9 +11,7 @@ h5,
 h6,
 img,
 a,
-li,
-p,
-span {
+li {
   transition: all var(--theme-switch-duration) ease-in-out 0s;
 }
 
