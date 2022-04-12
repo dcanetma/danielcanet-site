@@ -269,11 +269,14 @@ body.dark-theme #main .last::after {
 
 /* G. Media queries */
 @media (max-width: 52rem) {
+  #wrapper {
+    justify-content: center;
+  }
   #main {
     margin: 0;
   }
   #main > .inner {
-    padding: var(--s1) 0 var(--s3) var(--s1);
+    padding: var(--s2) 0 var(--s3) var(--s1);
   }
   #main .first {
     text-align: center;
@@ -289,14 +292,14 @@ body.dark-theme #main .last::after {
   }
   #main > * > * {
     /* ↓ applies to both elements */
-    margin: var(--s-1);
+    margin: var(--s1);
   }
   .stack {
     align-items: flex-start;
     text-align: center;
   }
   .stack > * + * {
-    margin-top: var(--s-1);
+    margin-top: var(--s1);
   }
   .img-profile {
     margin-left: auto;
@@ -305,22 +308,63 @@ body.dark-theme #main .last::after {
     min-width: 9rem;
   }
   h1 {
+    font-size: var(--s3);
+    line-height: calc(0.825 * var(--s3));
+  }
+  h2 {
+    font-size: calc(var(--s1) * 0.75);
+    max-width: none;
+  }
+  p {
+    font-size: var(--s0);
+    font-weight: 300;
+    text-align: center;
+    max-width: 52ch;
+  }
+  a:link,
+  a:visited {
+    font-size: calc(var(--s0) * 0.875);
+  }
+}
+
+@media (max-width: 25.87rem) {
+  #wrapper {
+    justify-content: start;
+  }
+  #main > .inner {
+    padding: var(--s2) 0 var(--s3) var(--s1);
+  }
+  #main > * > * {
+    /* ↓ applies to both elements */
+    margin: var(--s0);
+  }
+  .stack > * + * {
+    margin-top: var(--s0);
+  }
+  .img-profile {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 6rem;
+  }
+  h1 {
     font-size: var(--s2);
     line-height: calc(0.825 * var(--s2));
   }
   h2 {
-    font-size: calc(var(--s1) * 0.75);
+    font-size: var(--s0);
     max-width: 18ch;
   }
   p {
-    font-size: calc(var(--s0) * 0.925);
-    line-height: 1.125;
+    font-size: calc(var(--s0) * 0.875);
+    line-height: 1.25;
     font-weight: 300;
     max-width: 66ch;
     min-width: 27ch;
+    text-align: justify;
   }
   a:link,
   a:visited {
     font-size: calc(var(--s0) * 0.75);
+    font-weight: 500;
   }
 }
