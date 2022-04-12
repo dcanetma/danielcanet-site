@@ -9,13 +9,15 @@ body {
   h4,
   h5,
   h6,
+  img,
   a:link,
   a:visited,
   a:hover,
   a:active,
+  li,
   p b,
   p a {
-    transition: color var(--theme-switch-duration) ease-in-out 0s;
+    transition: all var(--theme-switch-duration) ease-in-out 0s;
   }
   
   #main {

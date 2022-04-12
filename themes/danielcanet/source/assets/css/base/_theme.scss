@@ -312,7 +312,7 @@ body.dark-theme #main .last::after {
     line-height: calc(0.825 * var(--s3));
   }
   h2 {
-    font-size: calc(var(--s1) * 0.75);
+    font-size: var(--s0);
     max-width: none;
   }
   p {
