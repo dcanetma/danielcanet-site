@@ -10,7 +10,7 @@ description: Daniel Canet is Barcelona City-based Software engineer, Digital pro
 <div class="last stack bio">
     <h1>Daniel Canet</h1>
     <h2>Software Engineer & Digital Product Manager</h2>
-    <p>I am senior technical leader with proven experience building software, managing teams, developing code and delivering impactful, innovative solutions. I have a talent for blending engineering, strategy, empathy, and process to achieve extraordinary results.</p>
+    <p>I am senior technical leader with proven experience building software, managing teams, writing code and delivering impactful, innovative solutions. I have a talent for blending engineering, strategy, empathy, and process to achieve extraordinary results.</p>
     <ul class="contact">
         <li><a href="mailto:hello@danielca.net" title="Contact by e-mail">Email</a></li>        
         <li><a href="https://www.linkedin.com/in/dcanetma" title="Visit Daniel Canet's LinkedIn profile">LinkedIn</a></li>
