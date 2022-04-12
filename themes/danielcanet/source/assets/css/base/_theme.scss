@@ -356,12 +356,12 @@ body.dark-theme #main .last::after {
     max-width: 18ch;
   }
   p {
-    font-size: var(--s0);
+    font-size: calc(0.9375 * var(--s0));
     line-height: var(--ratio);
     font-weight: normal;
     max-width: 66ch;
     min-width: 27ch;
-    text-align: justify;
+    text-align: left;
   }
   a:link,
   a:visited {
