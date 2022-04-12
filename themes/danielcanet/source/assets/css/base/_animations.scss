@@ -1,92 +1,86 @@
 /* Animations */
 body {
-    transition: background-color var(--theme-switch-duration) ease-in-out 0s,
-      color var(--theme-switch-duration) ease-in-out 0s;
+  transition: background-color var(--theme-switch-duration) ease-in-out 0s,
+    color var(--theme-switch-duration) ease-in-out 0s;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+a,
+li,
+p {
+  transition: all var(--theme-switch-duration) ease-in-out 0s;
+}
+
+#main {
+  transition: opacity 3s ease-in-out 0s;
+}
+
+#main .first:before,
+#main .last:before,
+#main .last:after {
+  transition: border-color var(--theme-switch-duration) ease-in-out 0s;
+}
+a.toggle-mode {
+  transition: background-color var(--theme-switch-duration) ease-in-out 0s;
+}
+
+.img-profile {
+  transition: border-color var(--theme-switch-duration) ease-in-out 0s;
+}
+
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  img,
-  a:link,
-  a:visited,
-  a:hover,
-  a:active,
-  li,
-  p b,
-  p a {
-    transition: all var(--theme-switch-duration) ease-in-out 0s;
+  100% {
+    opacity: 1;
   }
-  
-  #main {
-    transition: opacity 3s ease-in-out 0s;
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  #main .first:before,
-  #main .last:before,
-  #main .last:after {
-    transition: border-color var(--theme-switch-duration) ease-in-out 0s;
+  100% {
+    opacity: 1;
   }
-  a.toggle-mode {
-    transition: background-color var(--theme-switch-duration) ease-in-out 0s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  .img-profile {
-    transition: border-color var(--theme-switch-duration) ease-in-out 0s;
+  100% {
+    opacity: 1;
   }
-  
-  
-  .fade-in {
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
-    -moz-animation: fadeIn ease 3s;
-    -o-animation: fadeIn ease 3s;
-    -ms-animation: fadeIn ease 3s;
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
+}
