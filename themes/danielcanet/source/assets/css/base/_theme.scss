@@ -347,8 +347,8 @@ body.dark-theme #main .last::after {
     max-width: 6rem;
   }
   h1 {
-    font-size: calc(0.875 * var(--s3));
-    line-height: calc(0.825 * var(--s3));
+    font-size: calc(0.725 * var(--s3));
+    line-height: calc(0.725 * var(--s3));
   }
   h2 {
     font-size: calc(var(--s1) * 0.875);
@@ -356,7 +356,7 @@ body.dark-theme #main .last::after {
   }
   p {
     font-size: var(--s0);
-    line-height: 1.25;
+    line-height: 1.125;
     font-weight: normal;
     max-width: 66ch;
     min-width: 27ch;
