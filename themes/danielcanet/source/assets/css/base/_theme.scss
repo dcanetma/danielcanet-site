@@ -319,7 +319,8 @@ body.dark-theme #main .last::after {
     font-size: var(--s0);
     font-weight: 300;
     text-align: center;
-    max-width: 52ch;
+    max-width: 80vw;
+    min-width: none;
   }
   a:link,
   a:visited {
@@ -356,7 +357,7 @@ body.dark-theme #main .last::after {
   }
   p {
     font-size: var(--s0);
-    line-height: 1.125;
+    line-height: var(--ratio);
     font-weight: normal;
     max-width: 66ch;
     min-width: 27ch;
