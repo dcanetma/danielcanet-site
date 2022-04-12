@@ -5,7 +5,7 @@ layout: page
 description: Daniel Canet is Barcelona City-based Software engineer, Digital product manager & Creative technologist.
 ---
 <div class="first stack">
-    <img src="media/profile.jpg" alt="Profile pic from Daniel Canet" class="img-profile" />
+    <img src="media/profile.new.jpg" alt="Profile pic from Daniel Canet" class="img-profile" />
 </div>
 <div class="last stack bio">
     <h1>Daniel Canet</h1>
