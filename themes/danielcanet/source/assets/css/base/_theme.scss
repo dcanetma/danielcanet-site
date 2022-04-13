@@ -313,11 +313,11 @@ body.dark-theme #main .last::after {
     line-height: calc(0.825 * var(--s3));
   }
   h2 {
-    font-size: var(--s0);
+    font-size: calc(0.825 * var(--s1));
     max-width: none;
   }
   p {
-    font-size: var(--s0);
+    font-size: calc(0.925 * var(--s0));
     font-weight: 300;
     max-width: 80vw;
     min-width: none;
@@ -328,7 +328,7 @@ body.dark-theme #main .last::after {
   }
   a:link,
   a:visited {
-    font-size: calc(var(--s0) * 0.875);
+    font-size: calc(0.725 * var(--s0));
   }
 }
 
@@ -373,6 +373,6 @@ body.dark-theme #main .last::after {
   a:link,
   a:visited {
     font-size: calc(var(--s0) * 0.825);
-    font-weight: 200;
+    font-weight: 300;
   }
 }
