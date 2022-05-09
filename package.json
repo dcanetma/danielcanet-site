@@ -1,6 +1,6 @@
 {
   "name": "danielcanet-site",
-  "version": "2.0.15",
+  "version": "2.1.0",
   "description": "Professional profile website for Daniel Canet",
   "scripts": {
     "publish": "git checkout deploy && git merge origin/main --ff-only && git push && git checkout main",
@@ -26,8 +26,8 @@
     "hexo-browsersync": "^0.3.0",
     "hexo-html-minifier": "^1.0.0",
     "hexo-renderer-dartsass": "^0.1.2",
-    "hexo-renderer-ejs": ">=0.3.1",
-    "hexo-renderer-marked": ">=2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^5.0.0",
     "hexo-server": "^3.0.0"
   }
 }

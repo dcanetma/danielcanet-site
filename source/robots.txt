@@ -22,6 +22,4 @@ User-agent: *
 Crawl-delay: 30
 
 # Folders
-Disallow: /admin/
-Disallow: /legal/
-
+Disallow: /media/docs/
