@@ -226,9 +226,9 @@ ul.resume {
   padding: var(--s-2) var(--s-3);
   font-size: 1rem;
   line-height: var(--line-height);
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: var(--s-3);
+  transition: color var(--theme-switch-duration) ease-in-out, background-color calc(var(--theme-switch-duration) / 3) ease-in-out,
+    border-color var(--theme-switch-duration) ease-in-out, box-shadow var(--theme-switch-duration) ease-in-out;
 
   &:hover,
   &:active {
@@ -319,6 +319,22 @@ body.dark-theme #main .last::before {
 
 body.dark-theme #main .last::after {
   border-bottom-color: var(--color-dark-headline);
+}
+
+body.dark-theme .btn {
+  border: 1px solid var(--color-bg);
+
+  &:hover,
+  &:active {
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    border-color: var(--color-text);
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+  }
 }
 
 /* G. Media queries */
