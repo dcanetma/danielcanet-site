@@ -19,6 +19,6 @@ description: Daniel Canet is Barcelona City-based software engineer, digital pro
         <li><a href="/media/docs/resume-danielcanet.pdf" title="Download Resume (PDF)">Resume</a></li>
     </ul>
     <ul class="resume">
-        <li><a class="btn" href="/media/docs/resume-danielcanet.pdf" title="Download Resume (PDF)"><span class="icon-transpose-y">⇪</span>Resume</a></li>
+        <li><a class="btn" href="/media/docs/resume-danielcanet.pdf" title="Download Resume (PDF)"><span class="icon-transpose-y">⇪</span>Resume<small>(PDF)</span></a></li>
     </ul>
 </div>
