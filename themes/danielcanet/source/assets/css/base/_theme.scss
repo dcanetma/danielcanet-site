@@ -168,6 +168,14 @@ p.small {
   line-height: 1;
 }
 
+.icon-transpose-y {
+  margin-right: var(--s-4);
+  font-size: 90%;
+  display: inline-block;
+  transform: rotateZ(180deg);
+  vertical-align: middle;
+}
+
 /* C. Links */
 a:link,
 a:visited {
