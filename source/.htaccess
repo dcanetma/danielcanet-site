@@ -962,3 +962,12 @@ FileETag None
     RewriteCond %{REQUEST_FILENAME}.html -f
     RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [QSA,L]
 </IfModule>
+
+# Disable cache for html
+<filesMatch "\.(html|htm)$">
+FileETag None
+Header unset ETag
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+</filesMatch>
