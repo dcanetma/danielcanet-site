@@ -1,6 +1,6 @@
 {
   "name": "danielcanet-site",
-  "version": "2.1.9",
+  "version": "2.1.10",
   "description": "Professional profile website for Daniel Canet",
   "scripts": {
     "publish": "git checkout deploy && git merge origin/main --ff-only && git push && git checkout main",
