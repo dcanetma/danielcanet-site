@@ -114,6 +114,9 @@ body {
   border-style: solid;
   border-color: var(--color-text);
   border-width: var(--s-2);
+
+  background-color: var(--color-bg); 
+
 }
 
 /* B. Typography and colors*/
@@ -316,7 +319,10 @@ body.dark-theme #main .first:before {
 }
 
 body.dark-theme .img-profile {
+  transition: background-color var(--theme-switch-duration) ease-in-out,
+              border-color var(--theme-switch-duration) ease-in-out var(--theme-switch-duration);
   border-color: var(--color-dark-text);
+  background-color: var(--color-bg); 
 }
 
 body.dark-theme #main .last::before {
@@ -384,6 +390,7 @@ body.dark-theme .btn {
     margin-right: auto;
     max-width: 10.5rem;
     min-width: 9rem;
+    background-color: var(--color-dark-text);
   }
   h1 {
     font-size: var(--s3);
@@ -445,6 +452,7 @@ body.dark-theme .btn {
     margin-left: auto;
     margin-right: auto;
     max-width: 6rem;
+    background: white;
   }
   h1 {
     font-size: calc(0.725 * var(--s3));
