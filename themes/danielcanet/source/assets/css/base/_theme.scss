@@ -388,7 +388,7 @@ body.dark-theme .btn {
   .img-profile {
     margin-left: auto;
     margin-right: auto;
-    max-width: 10.5rem;
+    max-width: 13.5rem;
     min-width: 9rem;
     background-color: var(--color-dark-text);
   }
@@ -417,7 +417,7 @@ body.dark-theme .btn {
   ul.contact {
     li {
       &:last-child  {
-        // display: none;
+        display: none;
       }
 
       &:nth-child(4)  {
