@@ -1,6 +1,6 @@
 title: Engineering, Digital Products and Leadership
 permalink: /
-date: 2022-04-14 18:14:42
+date: 2023-06-06 18:14:42
 layout: page
 description: Daniel Canet is Barcelona City-based software engineer, digital product manager & creative technologist.
 ---
@@ -16,9 +16,9 @@ description: Daniel Canet is Barcelona City-based software engineer, digital pro
         <li><a href="https://www.linkedin.com/in/dcanetma" title="Visit Daniel Canet's LinkedIn profile">LinkedIn</a></li>
         <li><a href="https://github.com/dcanetma" title="Visit Daniel Canet's GitHub profile from Wiris">GitHub</a></li>
         <li><a href="https://twitter.com/dcanetma" title="Visit Daniel Canet's Twitter profile">Twitter</a></li>
-        <li><a href="/media/docs/resume-danielcanet.pdf" title="Download Resume (PDF)">Resume</a></li>
+        <!-- <li><a href="/media/docs/resume-danielcanet.pdf" title="Download Resume (PDF)">Resume</a></li> -->
     </ul>
-    <ul class="resume">
+    <!-- <ul class="resume">
         <li><a class="btn" href="/media/docs/resume-danielcanet.pdf" title="Download Resume (PDF)">Resume<small>(PDF)</span></a></li>
-    </ul>
+    </ul> -->
 </div>

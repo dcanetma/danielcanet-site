@@ -418,10 +418,11 @@ body.dark-theme .btn {
   ul.contact {
     li {
       &:last-child  {
-        display: none;
+        // Uncomment if the Resume link is present
+        // display: none;
       }
 
-      &:nth-child(4)  {
+      &:nth-last-child(-1)  {
         &:after {
           content: "";
           padding-right: 0;
