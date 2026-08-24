@@ -15,7 +15,6 @@ description: Daniel Canet is Barcelona City-based software engineer, digital pro
         <li><a href="mailto:hello@danielca.net" title="Contact by e-mail">Email</a></li>        
         <li><a href="https://www.linkedin.com/in/dcanetma" title="Visit Daniel Canet's LinkedIn profile">LinkedIn</a></li>
         <li><a href="https://github.com/dcanetma" title="Visit Daniel Canet's GitHub profile from Wiris">GitHub</a></li>
-        <li><a href="https://twitter.com/dcanetma" title="Visit Daniel Canet's Twitter profile">Twitter</a></li>
         <!-- <li><a href="/media/docs/resume-danielcanet.pdf" title="Download Resume (PDF)">Resume</a></li> -->
     </ul>
     <!-- <ul class="resume">
