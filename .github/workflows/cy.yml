@@ -1,8 +1,8 @@
 # cy.yml
 # This workflow builds the website using Hexo 4.2.1
-# and publishes to the web hosting using FTP.
+# and publishes to the web hosting using SFTP.
 
-name: Build and publish website (FTP)
+name: Build and publish website
 
 on:
   workflow_dispatch:
@@ -12,41 +12,37 @@ on:
       - deploy
 
 jobs:
-  build:
+  publish-website:
+    name: Publish website
     runs-on: ubuntu-latest
     steps:
-      # 01. Checkout the repo.
       - name: Checkout repo
-        uses: actions/checkout@v1
+        uses: actions/checkout@v5
 
-      # 02. Set up node to version 14.
-      - uses: actions/setup-node@v1
+      - name: Set up node
+        uses: actions/setup-node@v6
         with:
-          node-version: 12
+          cache: "npm"
+          node-version: "25.1.0"
 
-      # 03. Install dependencies.
-      - name: Install dependencies
-        run: npm ci
-
-      # 04. Build the website
       - name: Build the website using Hexo
-        run: npm run build
+        run: echo "📦 Building Hexo application..."
+          echo "🔧 Installing dependencies..."
+          npm install
+          echo "🏗️ Running build process..."
+          npm run build
+          echo "✅ New frontend build completed"
+        env:
+          CI: true
 
-      # 04. Deploy the website using FTP-sync
-      # - name: Upload ftp using ftp-sync
-      #   uses: socram8888/ftp-hash-sync@v1
-      #   with:
-      #       host: ${{ secrets.FTP_SERVER }}
-      #       username: ${{ secrets.FTP_USERNAME }}
-      #       source: "public/"
-      #       password: ${{ secrets.FTP_PASSWORD }}
-      #       destination: ${{ secrets.FTP_REMOTE }}
-
-      - name: Upload ftp using ftp-deploy
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Publish website to server to Server
+        uses: easingthemes/ssh-deploy@v6.0.1
         with:
-            server: ${{ secrets.FTP_SERVER }}
-            username: ${{ secrets.FTP_USERNAME }}
-            password: ${{ secrets.FTP_PASSWORD }}
-            local-dir: "public/"
-            server-dir: ${{ secrets.FTP_REMOTE }}
+            ARGS: "-rlgoDzvc -i"
+            SOURCE: "public/"
+            REMOTE_HOST: ${{ vars.SERVER_URL }}
+            TARGET: ${{ vars.SERVER_REMOTE_PATH }}
+            REMOTE_PORT: ${{ secrets.SERVER_PORT }}
+            REMOTE_USER: ${{ secrets.SERVER_USER }}
+            SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
+
