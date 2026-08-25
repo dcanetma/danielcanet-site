@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## v2.4.1 - Aug 25, 2026
+
+- ci-cd: switch from rsync to SFTP-based deployment for SFTP-only server compatibility
+
 ## v2.4.0 - Aug 25, 2026
 
 - ci-cd: update build and publish website task using SFTP and the new server
