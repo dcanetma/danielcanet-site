@@ -19,6 +19,15 @@ jobs:
         name: 'production'
 
     steps:
+
+      - name: Display Deployment Information
+        run: |
+            echo "Starting Frontend Deployment Process"
+            echo "🚀 Current branch: ${{ github.ref_name }}"
+            echo "🎯 Target environment: production"
+            echo "⏰ Deployment started at: $(date)"
+            echo "------------------------------------------------"
+
       - name: Checkout repo
         uses: actions/checkout@v5
 
