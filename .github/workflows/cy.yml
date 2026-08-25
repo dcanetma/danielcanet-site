@@ -38,7 +38,8 @@ jobs:
           node-version: "25.1.0"
 
       - name: Build the website using Hexo
-        run: echo "📦 Building Hexo application..."
+        run: |
+          echo "📦 Building Hexo application..."
           echo "🔧 Installing dependencies..."
           npm install
           echo "🏗️ Running build process..."
