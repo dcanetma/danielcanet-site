@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## v2.4.0 - Aug 25, 2026
+
 - ci-cd: update build and publish website task using SFTP and the new server
 
 ## v2.3.7 - Aug 6, 2026
