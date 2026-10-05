@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-- ci-cd: fix publish website
+- ci-cd: fix SFTP deployment to upload compiled contents, including hidden files, directly into the server web root instead of a nested public directory
 
 ## v2.4.1 - Aug 25, 2026
 
